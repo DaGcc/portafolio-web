@@ -19,13 +19,19 @@
                 "network": "Github",
                 "username": "DaGcc",
                 "url": "https://github.com/DaGcc",
-                "image" : "http://localhost:4200/assets/img/icons/github2.svg" 
+                "image": "http://localhost:4200/assets/img/icons/github2.svg"
             },
             {
                 "network": "Linkedin",
                 "username": "Daniel Gutiérrez",
                 "url": "https://www.linkedin.com/in/daniel-gutiérrez-8648832a9/",
                 "image": "http://localhost:4200/assets/img/icons/linkedin2.svg"
+            },
+            {
+                "network": "WhastApp",
+                "username": "Daniel",
+                "url": "https://wa.me/906529726",
+                "image": "http://localhost:4200/assets/img/icons/whastapp.svg"
             }
         ]
     },
@@ -220,7 +226,7 @@
         {
             "language": "Ingles",
             "fluency": "Basico",
-            "score" : 4
+            "score": 4
         },
         {
             "language": "Español",
@@ -245,14 +251,226 @@
     ],
     "projects": [
         {
-            "name": "Project",
+            "name": "Angular Template",
             "startDate": "2019-01-01",
             "endDate": "2021-01-01",
-            "description": "Description...",
+            "description": "Plantilla elaborada con Angular, PrimeNg y Angular Material, además junto con diferentes tipos de gráficos con animación",
             "highlights": [
                 "Won award at AIHacks 2016"
             ],
-            "url": "https://project.com/"
+            "images" : [
+                "http://localhost:4200/assets/img/panels/proyecto-plantilla.webp"
+            ],
+            "technologies": [
+                {
+                    "name": "Angular",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular.ico",
+                    "level": 1
+                },
+                {
+                    "name": "PrimeNG",
+                    "urlImage": "http://localhost:4200/assets/img/icons/primeng-logo.webp",
+                    "level": 1
+                },
+                {
+                    "name": "Angular Material",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular-material.png",
+                    "level": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "urlImage": "http://localhost:4200/assets/img/icons/ts.svg",
+                    "level": 1
+                },
+                {
+                    "name": "HTML",
+                    "urlImage": "http://localhost:4200/assets/img/icons/html.svg",
+                    "level": 1
+                },
+                {
+                    "name": "CSS",
+                    "urlImage": "http://localhost:4200/assets/img/icons/css.svg",
+                    "level": 1
+                }
+                
+            ],
+            "repositories": [
+                {
+                    "network": "Github",
+                    "username": "DaGcc",
+                    "url": "https://github.com/DaGcc",
+                    "image": "http://localhost:4200/assets/img/icons/github2.svg"
+                }
+            ]
+        },
+        {
+            "name": "Angular Map App",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Esta aplicacion brinda la ubicacion del usuario y las rutas alternas que se pueden tomar para una dirección especifica a la cual se quiere llegar.",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "images" : [
+                "http://localhost:4200/assets/img/panels/proyecto-map.webp",
+                "http://localhost:4200/assets/img/panels/proyecto-map.webp"
+            ],
+            "technologies": [
+                {
+                    "name": "Angular",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular.ico",
+                    "level": 1
+                },
+                {
+                    "name": "Angular Material",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular-material.png",
+                    "level": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "urlImage": "http://localhost:4200/assets/img/icons/ts.svg",
+                    "level": 1
+                },
+                {
+                    "name": "HTML",
+                    "urlImage": "http://localhost:4200/assets/img/icons/html.svg",
+                    "level": 1
+                },
+                {
+                    "name": "CSS",
+                    "urlImage": "http://localhost:4200/assets/img/icons/css.svg",
+                    "level": 1
+                }
+            ],
+            "repositories": [
+                {
+                    "network": "Github",
+                    "username": "DaGcc",
+                    "url": "https://github.com/DaGcc/APP-MAP",
+                    "image": "http://localhost:4200/assets/img/icons/github2.svg"
+                }
+            ]
+        },
+        {
+            "name": "DNS App",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Proyecto que simula el funcionamiento de un servicio que ofrece los DNS, con graficos incluidos para une mejor visualizacion del historial de consultas realizadas a diversas direcciones IP y Nombres de dominio",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "images" : [
+                "http://localhost:4200/assets/img/panels/proyecto-map.webp"
+            ],
+            "technologies": [
+                {
+                    "name": "Spring Boot",
+                    "urlImage": "http://localhost:4200/assets/img/icons/spring-boot2.svg",
+                    "level": 1
+                },
+                {
+                    "name": "Microsoft SQL server",
+                    "urlImage": "http://localhost:4200/assets/img/icons/sqlserver.png",
+                    "level": 1
+                },
+                {
+                    "name": "Angular",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular.ico",
+                    "level": 1
+                },
+                {
+                    "name": "Angular Material",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular-material.png",
+                    "level": 1
+                },
+                {
+                    "name": "PrimeNG",
+                    "urlImage": "http://localhost:4200/assets/img/icons/primeng-logo.webp",
+                    "level": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "urlImage": "http://localhost:4200/assets/img/icons/ts.svg",
+                    "level": 1
+                },
+                {
+                    "name": "HTML",
+                    "urlImage": "http://localhost:4200/assets/img/icons/html.svg",
+                    "level": 1
+                },
+                {
+                    "name": "CSS",
+                    "urlImage": "http://localhost:4200/assets/img/icons/css.svg",
+                    "level": 1
+                }
+            ],
+            "repositories": [
+                {
+                    "network": "Github",
+                    "username": "DaGcc",
+                    "url": "https://github.com/DaGcc/PROYECTO-WEB-APP-DNS_ANGULAR",
+                    "image": "http://localhost:4200/assets/img/icons/github2.svg"
+                }
+            ]
+        },
+        {
+            "name": "Chat App",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Esta aplicacion brinda la ubicacion del usuario y las rutas alternas que se pueden tomar para una dirección especifica a la cual se quiere llegar",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "images" : [
+                "http://localhost:4200/assets/img/panels/proyecto-chat.webp"
+            ],
+            "technologies": [
+                {
+                    "name": "Spring Boot",
+                    "urlImage": "http://localhost:4200/assets/img/icons/spring-boot2.svg",
+                    "level": 1
+                },
+                {
+                    "name": "Angular",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular.ico",
+                    "level": 1
+                },
+                {
+                    "name": "Angular Material",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular-material.png",
+                    "level": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "urlImage": "http://localhost:4200/assets/img/icons/ts.svg",
+                    "level": 1
+                },
+                {
+                    "name": "HTML",
+                    "urlImage": "http://localhost:4200/assets/img/icons/html.svg",
+                    "level": 1
+                },
+                {
+                    "name": "CSS",
+                    "urlImage": "http://localhost:4200/assets/img/icons/css.svg",
+                    "level": 1
+                }
+            ],
+            "repositories": [
+                {
+                    "network": "Github",
+                    "username": "Front-End",
+                    "url": "https://github.com/DaGcc/APP-MAP",
+                    "image": "http://localhost:4200/assets/img/icons/github2.svg"
+                },
+                {
+                    "network": "Github",
+                    "username": "Back-End",
+                    "url": "https://github.com/DaGcc/CHAT-APP-BACK",
+                    "image": "http://localhost:4200/assets/img/icons/github2.svg"
+                } 
+                
+            ]
         }
     ]
 }

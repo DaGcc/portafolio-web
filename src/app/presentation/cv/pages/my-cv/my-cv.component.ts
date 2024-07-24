@@ -2,13 +2,15 @@ import { CommonModule, IMAGE_CONFIG, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, type OnInit, CUSTOM_ELEMENTS_SCHEMA, inject, signal, computed, OnDestroy } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 
-import { register } from 'swiper/element/bundle';
+
 import { CvRepositoryImplService } from '@infraestructure/repositories/cv/cv.repository.impl.service';
 import { CvEntity } from '@domain/entities/cv.entity';
 import { SkeletonComponent } from 'src/app/shared/components/skeleton/skeleton.component';
 import { delay, Subscription } from 'rxjs';
 import { BadgeComponent } from '@presentation/cv/components/badge/badge.component';
-register();
+import { CardProjectComponent } from '@presentation/cv/components/card-project/card-project.component';
+import { ButtonLinkComponent } from '@presentation/cv/components/button-link/button-link.component';
+
 @Component({
   selector: 'app-my-cv',
   standalone: true,
@@ -17,7 +19,9 @@ register();
     NgFor,
     NgIf,
     SkeletonComponent,
-    BadgeComponent
+    BadgeComponent,
+    CardProjectComponent,
+    ButtonLinkComponent
   ],
   providers: [
     {

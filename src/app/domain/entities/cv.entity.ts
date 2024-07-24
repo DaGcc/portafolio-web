@@ -77,12 +77,20 @@ export interface Language {
 }
 
 export interface Project {
-    name:        string;
-    startDate:   Date;
-    endDate:     Date;
-    description: string;
-    highlights:  string[];
-    url:         string;
+    name:         string;
+    startDate:    Date;
+    endDate:      Date;
+    images :      string[];
+    description:  string;
+    highlights:   string[];
+    technologies: Technology[];
+    repositories: Profile[];
+}
+
+export interface Technology {
+    name:     string;
+    urlImage: string;
+    level:    number;
 }
 
 export interface Publication {
@@ -100,13 +108,7 @@ export interface Reference {
 
 export interface Skill {
     name:  string;
-    utils: Util[];
-}
-
-export interface Util {
-    name:     string;
-    urlImage: string;
-    level:    number;
+    utils: Technology[];
 }
 
 export interface Volunteer {

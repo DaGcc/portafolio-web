@@ -1,6 +1,7 @@
-<div class="tag" [ngClass]="classList()">
+<article class="tag" [ngClass]="classList()">
     <figure class="tag__figure">
         <img [src]="src()" alt="Figure tag">
     </figure>
-    <span class="tag__text">{{text() || ''}}</span>
-</div>
+    <span *ngIf="text()!=undefined" class="tag__text">{{text()}}</span>
+
+</article>

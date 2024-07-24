@@ -1,0 +1,32 @@
+<section class="carousel-img">
+    <swiper-container class="swiper-container" loop="false" space-between="30" pagination="true"
+        pagination-dynamic-bullets="true" effect="cards" grab-cursor="true" >
+        <!-- <swiper-slide class="swiper-slide">
+            <figure class="carousel-img__figure">
+                <img class="carousel-img__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                    alt="tu foto del proyecto">
+            </figure>
+        </swiper-slide>
+        <swiper-slide>
+            <figure class="carousel-img__figure">
+                <img class="carousel-img__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                    alt="tu foto del proyecto">
+            </figure>
+        </swiper-slide>
+        <swiper-slide>
+            <figure class="carousel-img__figure">
+                <img class="carousel-img__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                    alt="tu foto del proyecto">
+            </figure>
+        </swiper-slide> -->
+
+        @for (image of images(); track $index) {
+            <swiper-slide>
+                <figure class="carousel-img__figure" draggable="false">
+                    <img class="carousel-img__img" [src]="image"
+                        [alt]="'imagen carousel '+$index">
+                </figure>
+            </swiper-slide>
+        }
+    </swiper-container>
+</section>

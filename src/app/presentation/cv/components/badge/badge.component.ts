@@ -1,4 +1,4 @@
-import { CommonModule, NgClass } from '@angular/common';
+import { CommonModule, NgClass, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input, type OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +6,7 @@ import { ChangeDetectionStrategy, Component, input, type OnInit } from '@angular
   standalone: true,
   imports: [
     NgClass,
+    NgIf
   ],
   templateUrl: './badge.component.html',
   styleUrl: './badge.component.css',

@@ -1,0 +1,52 @@
+
+<section class="card">
+    <section class="card__body">
+
+        <div class="card__head">
+            <h3 class="card__title">
+                {{project()?.name}}
+            </h3>
+            <ul class="card__social">
+
+                @for (repository of project()?.repositories ; track $index) {
+                    <li class="card__social__media">
+                        <component-button-link [link]="repository.url" [pathIcon]="repository.image" />
+                    </li>
+                }
+                
+            </ul>   
+        </div>
+
+    
+        @if (project()!.images != undefined ) {
+
+            @if ( project()!.images.length > 1) {
+                
+                <div class="card__figure">
+                    <component-carousel-img class="card__img" [images]="project()!.images"/>
+                </div>
+            }@else {
+                <figure class="card__figure" >
+                    <img class="card__img" [src]="project()!.images[0] || ''" alt="tu foto del proyecto" draggable="false">
+                </figure>
+                <!-- <span class="tag__text">Angular</span> -->
+            }
+        }@else {
+    
+        }
+    
+        <p class="card__text text">
+            {{project()?.description}}
+        </p>
+    
+        <ul class="card__skills">
+            @for (skill of project()?.technologies; track $index) {
+                <li class="card__skill">
+                    <component-badge [src]="skill.urlImage"/>
+                </li>
+            }
+        </ul>
+      
+    
+    </section>
+</section>

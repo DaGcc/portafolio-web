@@ -5,6 +5,13 @@
     position: relative;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,samp{
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata", monospace !important;
 }
 
 :root {
@@ -23,7 +30,7 @@
     --info-text: rgba(206, 212, 218, 0.6);
 
     --background-page: #102035;
-    --background-widget-one: #273d60;
+    --background-widget-one: #273d60d1;
     --background-widget-two: #18273F;
     --background-widget-three: #5855ff;
     --background-widget-four: #161616;
@@ -31,8 +38,11 @@
 
     --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff);
 
-
     --background-btn-one: #85A5A7;
+    --background-btn-two: #0f1f39a6;
+
+    --border-radius-btn: 5px;
+    --border-radius-badge: 20px; 
 
     --top: 18px;
 }
@@ -40,6 +50,7 @@
 
 
 body.dark-mode {
+
 
     --title-color: #fff;
     --sub-title: #999;
@@ -50,7 +61,7 @@ body.dark-mode {
     --background-widget-one: #040905ff;
     --background-widget-four: #161616;
     --border-color: #6e28ccff;
-    
+
     --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff);
 }
 
@@ -62,9 +73,12 @@ body {
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+    font-family: "Inconsolata", monospace;
 }
-
+.font {
+    font-family: "Inconsolata", monospace;
+}
 body {
     overflow: auto;
     background-color: var(--background-page) !important;
@@ -82,7 +96,7 @@ body {
         background-clip: text;
         color: transparent;
         width: max-content;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
         text-wrap: balance;
         letter-spacing: 2px;
     }
