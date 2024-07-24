@@ -1,0 +1,59 @@
+
+
+.skeleton {
+  
+  animation-name: skeleton ;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  background: var(--bg-skeleton);
+  border-radius: var(--border-radius-skeleton);
+
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+@keyframes skeleton {
+  0% {
+    background: var(--bg-skeleton);
+  }
+
+  50% {
+    background: #eee;
+  }
+
+  100% {
+    background: var(--bg-skeleton);
+  }
+}
+
+/* ASÍ */
+@keyframes product-card {
+  0% {
+    background: #eee;
+  }
+
+  50% {
+    background: transparent;
+  }
+
+  100% {
+    background: #eee;
+  }
+}
+
+
+/* O ASÍ */
+
+/* @keyframes product-card {
+    0% {
+        background: transparent;
+    }
+    50%{
+        background: var(--bg-skeleton);
+    }
+    100%{
+        background: transparent;
+    }
+} */

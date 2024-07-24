@@ -2,6 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*" : ["src/app/assets/*"],
+      "@domain/*" : ["src/app/domain/*"],
+      "@infraestructure/*" : ["src/app/infraestructure/*"],
+      "@presentation/*" : ["src/app/presentation/*"],
+      "@base/*" : ["src/app/base/*"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

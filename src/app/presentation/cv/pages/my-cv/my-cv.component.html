@@ -1,0 +1,535 @@
+<!-- <figure class="figure-icon">
+    <img class="figure-icon__img" src="../../../../../assets/img/icons/angular.ico" alt="">
+</figure> -->
+<!-- Main -->
+
+@if ( dataCV().isLoad && dataCV().cv != undefined && cv() != undefined ) {
+    <main class="main">
+
+        <section class="container">
+    
+            <article class="presentation">
+    
+                <!-- <div class="back-img"></div> -->
+                <div class="presentation__back">
+
+                    <figure class="perfil"> 
+                        <img class="perfil__img" [src]="cv()!.basics.image" alt="tu foto">
+                    </figure>
+        
+                    <div class="datos">
+                        <h3 class="datos__text datos__text--title">{{cv()!.basics.name}}</h3>
+                        <span class="datos__text datos__text--sub-title">{{cv()!.basics.label}}</span>
+                    </div>
+        
+                    <ul class="redes-sociales">
+                        @for (profile of cv()!.basics.profiles; track $index) {
+                            <li class="redes-sociales__media">
+                                <a class="redes-sociales__link" [href]="profile.url" target="_blank">
+                                    <img class="redes-sociales__img" [src]="profile.image" [alt]="profile.network">
+                                </a>
+                            </li>
+                        }
+                    </ul>
+
+                </div>
+                
+            </article>
+    
+            <!--* fondo -->
+            <!-- <figure class="figure-back" style="display: none;">
+                    <img class="figure-back__img" src="" alt="tu fondo">
+                </figure> -->
+    
+    
+        </section>
+    
+    
+        <section class="container">
+    
+            <!-- <div class="row align-items-center wrap"> -->
+            <div class="obtetivo">
+                <div>
+                    <!--* titulo container  -->
+                    <h2 class="container__title">OBJETIVOS</h2>
+                    <p class="text">{{cv()!.basics.summary}}</p>
+                </div>
+    
+                <figure class="figure">
+                    <img class="figure__img" src="../../../../../assets/img/panels/developer-isometric.svg" alt="fnd">
+                </figure>
+    
+            </div>
+    
+        </section>
+    
+    
+    
+        <article class="container">
+    
+            <!--* titulo container  -->
+            <h2 class="container__title">HABILIDADES</h2>
+    
+            <!--* skills -->
+            <ul class="skills">
+    
+                @for (skill of cv()!.skills; track $index) {
+                    @for (util of skill.utils; track $index) {
+                        <li class="skills__skill">
+                            <!-- <div class="tag">
+                                <figure class="tag__figure">
+                                    <img [src]="util.urlImage" alt="Figure tag">
+                                </figure>
+                                <span class="tag__text">{{util.name}}</span>
+                            </div> -->
+                            <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'tag--not-border'"/>
+                        </li>
+                    }
+                }
+                
+    
+            </ul>
+    
+        </article>
+    
+    
+    
+        <article class="container">
+    
+            <!--* titulo container  -->
+            <h2 class="container__title"> PROYECTOS</h2>
+    
+            <!--* proyectos  -->
+            <section class="cards">
+    
+                <div class="card">
+    
+                    <h3 class="card__title">
+                        Primer proyecto
+                    </h3>
+    
+                    <figure class="card__figure">
+                        <img class="card__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                            alt="tu foto del proyecto">
+                    </figure>
+    
+                    <p class="card__text text">
+                        Proyecto que simula el funcionamiento de un servicio que ofrece los DNS, con graficos incluidos
+                        para
+                        une mejor visualizacion del historial de consultas realizadas a diversas direcciones IP y
+                        Nombres de dominio
+                    </p>
+    
+                    <div class="card__skills">
+    
+                        <ul class="skills">
+    
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/angular.ico" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Angular</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/angular-material.png" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Angular Material</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/spring-boot2.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Spring Boot</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/sql.png" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">SQL</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/ts.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Type Script</span> -->
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="redes-sociales">
+                            <li class="redes-sociales__media">
+                                <a class="redes-sociales__link" href="https://github.com/DaGcc" target="_blank">
+                                    <img class="redes-sociales__img" src="../../../../../assets/img/icons/github2.svg"
+                                        alt="Github">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="card">
+    
+                    <h3 class="card__title">
+                        Segundo proyecto
+                    </h3>
+    
+                    <figure class="card__figure">
+                        <img class="card__img" src="../../../../../assets/img/panels/proyecto-plantilla.webp"
+                            alt="tu foto del proyecto">
+                    </figure>
+    
+                    <p class="card__text text">
+                        Proyecto que simula el funcionamiento de un servicio que ofrece los DNS, con graficos incluidos
+                        para
+                        une mejor visualizacion del historial de consultas realizadas a diversas direcciones IP y
+                        Nombres de dominio
+                    </p>
+    
+                    <div class="card__skills">
+    
+                        <ul class="skills">
+    
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/angular.ico" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Angular</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/primeng-logo.webp" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">PrimeNG</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/ts.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Type Script</span> -->
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="redes-sociales">
+                            <li class="redes-sociales__media">
+                                <a class="redes-sociales__link" href="https://github.com/DaGcc" target="_blank">
+                                    <img class="redes-sociales__img" src="../../../../../assets/img/icons/github2.svg"
+                                        alt="Github">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="card">
+    
+                    <h3 class="card__title">
+                        Primer proyecto
+                    </h3>
+    
+                    <figure class="card__figure">
+                        <img class="card__img" src="../../../../../assets/img/panels/proyecto-map.webp"
+                            alt="tu foto del proyecto">
+                    </figure>
+    
+                    <p class="card__text text">
+                        Proyecto que simula el funcionamiento de un servicio que ofrece los DNS, con graficos incluidos
+                        para
+                        une mejor visualizacion del historial de consultas realizadas a diversas direcciones IP y
+                        Nombres de dominio
+                    </p>
+    
+                    <div class="card__skills">
+    
+                        <ul class="skills">
+    
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/angular.ico" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Angular</span> -->
+                                </div>
+    
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/spring-boot2.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Spring Boot</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/sql.png" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">SQL</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/ts.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Type Script</span> -->
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="redes-sociales">
+                            <li class="redes-sociales__media">
+                                <a class="redes-sociales__link" href="https://github.com/DaGcc" target="_blank">
+                                    <img class="redes-sociales__img" src="../../../../../assets/img/icons/github2.svg"
+                                        alt="Github">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="card">
+    
+                    <h3 class="card__title">
+                        Primer proyecto
+                    </h3>
+    
+                    <figure class="card__figure">
+                        <img class="card__img" srcset="../../../../../assets/img/panels/proyecto-chat.webp"
+                            alt="tu foto del proyecto">
+                    </figure>
+    
+                    <p class="card__text text">
+                        Proyecto que simula el funcionamiento de un servicio que ofrece los DNS, con graficos incluidos
+                        para
+                    </p>
+    
+                    <div class="card__skills">
+    
+                        <ul class="skills">
+    
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/angular.ico" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Angular</span> -->
+                                </div>
+    
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/spring-boot2.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Spring Boot</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/sql.png" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">SQL</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/ts.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Type Script</span> -->
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="redes-sociales">
+                            <li class="redes-sociales__media">
+                                <a class="redes-sociales__link" href="https://github.com/DaGcc" target="_blank">
+                                    <img class="redes-sociales__img" src="../../../../../assets/img/icons/github2.svg"
+                                        alt="Github">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="card">
+    
+                    <h3 class="card__title">
+                        Primer proyecto
+                    </h3>
+                    <!-- 
+                    <figure class="card__figure">
+                        <img class="card__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                            alt="tu foto del proyecto" >
+                    </figure> -->
+    
+                    <swiper-container class="swiper-container" loop="true" space-between="30" pagination="true"
+                        pagination-dynamic-bullets="true" effect="cards" grab-cursor="true" initial-slide="2">
+                        <swiper-slide class="swiper-slide">
+                            <figure class="card__figure">
+                                <img class="card__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                                    alt="tu foto del proyecto">
+                            </figure>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <figure class="card__figure">
+                                <img class="card__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                                    alt="tu foto del proyecto">
+                            </figure>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <figure class="card__figure">
+                                <img class="card__img" src="../../../../../assets/img/panels/proyecto-sr.webp"
+                                    alt="tu foto del proyecto">
+                            </figure>
+                        </swiper-slide>
+                    </swiper-container>
+    
+                    <p class="card__text text">
+                        Proyecto que simula el funcionamiento de un servicio que ofrece los DNS, con graficos incluidos
+                        para
+                        une mejor visualizacion del historial de consultas realizadas a diversas direcciones IP y
+                        Nombres de dominio
+                    </p>
+    
+                    <div class="card__skills">
+    
+                        <ul class="skills">
+    
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img srcset="../../../../../assets/img/icons/angular.ico" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Angular</span> -->
+                                </div>
+    
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/spring-boot2.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Spring Boot</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/sql.png" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">SQL</span> -->
+                                </div>
+                            </li>
+                            <li class="skills__skill">
+                                <div class="tag tag--not-border">
+                                    <figure class="tag__figure">
+                                        <img src="../../../../../assets/img/icons/ts.svg" alt="Figure tag">
+                                    </figure>
+                                    <!-- <span class="tag__text">Type Script</span> -->
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="redes-sociales">
+                            <li class="redes-sociales__media">
+                                <a class="redes-sociales__link" href="https://github.com/DaGcc" target="_blank">
+                                    <img class="redes-sociales__img" src="../../../../../assets/img/icons/github2.svg"
+                                        alt="Github">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+            </section>
+    
+        </article>
+    
+    
+        <article class="container">
+            <h2 class="container__title">EXPERIENCIA</h2>
+    
+    
+            <section class="timeline">
+    
+                <span class="timeline__line"></span>
+    
+                <div class="timeline__card">
+                    <span class="timeline__date">2024/03</span>
+                    <p class="timeline__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum amet pariatur aliquid
+                        aspernatur modi consequatur quaerat rem officia ipsam! Ex!</p>
+                </div>
+                <div class="timeline__card">
+                    <span class="timeline__date">2024/03</span>
+                    <p class="timeline__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum amet pariatur aliquid
+                        aspernatur modi consequatur quaerat rem officia ipsam! Ex!</p>
+                </div>
+                <div class="timeline__card">
+                    <span class="timeline__date">2024/03</span>
+                    <p class="timeline__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum amet pariatur aliquid
+                        aspernatur modi consequatur quaerat rem officia ipsam! Ex!</p>
+                </div>
+    
+            </section>
+    
+        </article>
+    
+    </main>
+    
+    <!-- contact -->
+    <footer class="footer">
+    
+        <p style="text-align: center; color: var(--info-text);">©Todos los derechos reservados</p>
+    
+    </footer>
+    
+    
+}@else {
+    <main class="main">
+        <section class="container">
+            <!-- <div style="width: 10px; height: 10px;">
+                <component-skeleton></component-skeleton>
+            </div> -->
+            <span> CARGANDO DATOS...</span>
+        </section>
+        
+    </main>
+}
+
+
+
+<!--* con display flex todos los hijos se convertiran el elementos en linea, pero tener cuidado
+si un elemento tiene una altura y los demas no, dicha altura afectara a estos elementos sin altura definida,
+para ello usaremos  aling-items: flex-start => row -->
+<!--* tener en cuenta de que los elementos sin una altura en row toman el 100% de la altura del padre, para ello usamos aling-items para controlar ese comportamiento -->
+<!--* para colum toman el 100% del width o ancho, para ello usamos, justify-content para controlar ese comportamiento  -->
+<!-- <div style="display: flex; flex-direction: row; height: 100px;">
+    <div style="background: green;">Elemento 1</div>
+    <div style="height: 500px;background-color: red;">Elemento 2</div>
+    <div style="background: green;">Elemento 3</div>
+</div> -->

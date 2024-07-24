@@ -1,0 +1,258 @@
+{
+    "basics": {
+        "name": "Daniel Amadeo Gutierrez Ccallasaca",
+        "label": "Programador Full Stack",
+        "image": "http://localhost:4200/assets/img/perfil/perfil.jpeg",
+        "email": "gutierrezcallazacadaniel@gmail.com",
+        "phone": "+51 906 529 726",
+        "url": "https://dgc.com",
+        "summary": "Como estudiante de Ingeniería de Sistemas e Informática con habilidades en la rama de programación y desarrollo web, busco una oportunidad para desarrollarme profesionalmente y construir mis conocimientos en un entorno de trabajo dinámico, además de seguir aprendiendo nuevas cosas y aplicarla en tecnologías emergentes para resolver problemas.",
+        "location": {
+            "address": "A.H. Los Angeles Mzn. D Nro. Lote 10 - Tierra prometida",
+            "postalCode": "11000",
+            "city": "Ica",
+            "countryCode": "Perú",
+            "region": "Ica"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "DaGcc",
+                "url": "https://github.com/DaGcc",
+                "image" : "http://localhost:4200/assets/img/icons/github2.svg" 
+            },
+            {
+                "network": "Linkedin",
+                "username": "Daniel Gutiérrez",
+                "url": "https://www.linkedin.com/in/daniel-gutiérrez-8648832a9/",
+                "image": "http://localhost:4200/assets/img/icons/linkedin2.svg"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Code Team",
+            "position": "Programador Full Stack",
+            "url": null,
+            "startDate": "2023-02-06",
+            "endDate": "2024-03-22",
+            "summary": "",
+            "highlights": [
+                "Revisión de códigos existentes para la detección de errores en PHP y en la app web.",
+                "Elaboración de diversos módulos, tales como: Ventas, Productos, Producción, Pagos, Autenticación, etc. Para la automatización de procesos y manejo de la información.",
+                "Manejo de base de datos, mostrando recursos de manera óptima(paginada).",
+                "Uso de Bootstrap, SweetAlert2, Select2, etc. para la parte web.",
+                "Reportes en formatos PDF en PHP.",
+                "Optimización"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": null,
+            "position": null,
+            "url": null,
+            "startDate": null,
+            "endDate": null,
+            "summary": null,
+            "highlights": [
+                null
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University",
+            "url": "https://institution.com/",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2011-01-01",
+            "endDate": "2013-01-01",
+            "score": "4.0",
+            "courses": [
+                "DB1101 - Basic SQL"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": null,
+            "date": null,
+            "awarder": null,
+            "summary": null
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Code Team",
+            "date": "2024-03-25",
+            "issuer": "Company",
+            "url": null
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "url": "https://publication.com",
+            "summary": "Description…"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Front End Developer",
+            "utils": [
+                {
+                    "name": "HTML",
+                    "urlImage": "http://localhost:4200/assets/img/icons/html.svg",
+                    "level": 1
+                },
+                {
+                    "name": "CSS",
+                    "urlImage": "http://localhost:4200/assets/img/icons/css.svg",
+                    "level": 1
+                },
+                {
+                    "name": "SCSS",
+                    "urlImage": "http://localhost:4200/assets/img/icons/html.svg",
+                    "level": 1
+                },
+                {
+                    "name": "JavaScript",
+                    "urlImage": "http://localhost:4200/assets/img/icons/JS.svg",
+                    "level": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "urlImage": "http://localhost:4200/assets/img/icons/ts.svg",
+                    "level": 1
+                },
+                {
+                    "name": "Angular",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular.ico",
+                    "level": 1
+                },
+                {
+                    "name": "ASP .Net",
+                    "urlImage": "http://localhost:4200/assets/img/icons/asp.ico",
+                    "level": 1
+                },
+                {
+                    "name": "Bootstrap",
+                    "urlImage": "http://localhost:4200/assets/img/icons/bootstrap.svg",
+                    "level": 1
+                },
+                {
+                    "name": "PrimeNG",
+                    "urlImage": "http://localhost:4200/assets/img/icons/primeng-logo.webp",
+                    "level": 1
+                },
+                {
+                    "name": "Angular Material",
+                    "urlImage": "http://localhost:4200/assets/img/icons/angular-material.png",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "name": "Back End Developer",
+            "utils": [
+                {
+                    "name": "Java",
+                    "urlImage": "http://localhost:4200/assets/img/icons/java.svg",
+                    "level": 1
+                },
+                {
+                    "name": "Spring Boot",
+                    "urlImage": "http://localhost:4200/assets/img/icons/spring-boot2.svg",
+                    "level": 1
+                },
+                {
+                    "name": "C#",
+                    "urlImage": "http://localhost:4200/assets/img/icons/c-sharp.svg",
+                    "level": 1
+                },
+                {
+                    "name": "PHP",
+                    "urlImage": "http://localhost:4200/assets/img/icons/php.png",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "name": "Data base",
+            "utils": [
+                {
+                    "name": "PostgreSQL",
+                    "urlImage": "http://localhost:4200/assets/img/icons/postgresql.webp",
+                    "level": 1
+                },
+                {
+                    "name": "Microsoft SQL server",
+                    "urlImage": "http://localhost:4200/assets/img/icons/sqlserver.png",
+                    "level": 1
+                },
+                {
+                    "name": "MySql",
+                    "urlImage": "http://localhost:4200/assets/img/icons/sql.png",
+                    "level": 1
+                }
+            ]
+        },
+        {
+            "name": "Version control",
+            "utils": [
+                {
+                    "name": "Git",
+                    "urlImage": "http://localhost:4200/assets/img/icons/git.svg",
+                    "level": 1
+                },
+                {
+                    "name": "Github",
+                    "urlImage": "http://localhost:4200/assets/img/icons/github2.svg",
+                    "level": 1
+                }
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Ingles",
+            "fluency": "Basico",
+            "score" : 4
+        },
+        {
+            "language": "Español",
+            "fluency": null,
+            "score": 10
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": [
+                "Ferrets",
+                "Unicorns"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference…"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Description...",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        }
+    ]
+}
