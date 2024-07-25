@@ -4,8 +4,27 @@
 <!-- Main -->
 
 @if ( dataCV().isLoad && dataCV().cv != undefined && cv() != undefined ) {
+    
+    <!--* ASIDE  -->
+    <aside class="aside --shadow">
+        <div class="side-actions">
+            @for (profile of cv()!.basics.profiles; track $index) {
+                <li class="redes-sociales__media">
+                    <component-button-link class="redes-sociales__link" [link]="profile.url" [pathIcon]="profile.image" />
+                </li>
+            }
+            <li class="redes-sociales__media">
+                <component-button-link class="redes-sociales__link" 
+                [link]="'mailto:gutierrezcallazacadaniel@gmail.com?Subject=Interesado%20en%20tus%20habilidades'" 
+                [pathIcon]="'http://localhost:4200/assets/img/icons/gmail.svg'" />
+            </li>
+        </div>
+    </aside>
+
+    <!--* MAIN -->
     <main class="main">
 
+        <!--* PRESENTACION  -->
         <section class="container">
     
             <article class="presentation">
@@ -34,8 +53,9 @@
                 
             </article>
         </section>
-    
-    
+        <!--! END - PRESENTACION  -->
+        
+        <!--* OBJETIVOS -->
         <section class="container">
 
             <div class="obtetivo">
@@ -52,9 +72,9 @@
             </div>
     
         </section>
+        <!--! END - OBJETIVOS  -->
     
-    
-    
+        <!--* HABILIDADES  -->
         <article class="container">
     
             <!--* titulo container  -->
@@ -74,9 +94,9 @@
             </ul>
     
         </article>
+        <!--! END - HABILIDADES  -->
     
-    
-    
+        <!--* PROYECTOS  -->
         <article class="container">
     
             <!--* titulo container  -->
@@ -92,43 +112,19 @@
             </section>
 
         </article>
-    
-    
+        <!--! END - PROYECTOS  -->
+
+        <!--* TIMELINE  -->
         <article class="container">
             <h2 class="container__title">EXPERIENCIA</h2>
-    
-    
-            <section class="timeline">
-    
-                <span class="timeline__line"></span>
-    
-                <div class="timeline__card">
-                    <span class="timeline__date">2024/03</span>
-                    <p class="timeline__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum amet pariatur aliquid
-                        aspernatur modi consequatur quaerat rem officia ipsam! Ex!</p>
-                </div>
-                <div class="timeline__card">
-                    <span class="timeline__date">2024/03</span>
-                    <p class="timeline__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum amet pariatur aliquid
-                        aspernatur modi consequatur quaerat rem officia ipsam! Ex!</p>
-                </div>
-                <div class="timeline__card">
-                    <span class="timeline__date">2024/03</span>
-                    <p class="timeline__text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum amet pariatur aliquid
-                        aspernatur modi consequatur quaerat rem officia ipsam! Ex!</p>
-                </div>
-    
-            </section>
-    
+            <component-timeline />
         </article>
-    
+        <!--! END - TIMELINE  -->
     </main>
     
-    <!-- contact -->
+    <!--* FOOTER -->
     <footer class="footer">
-    
         <p style="text-align: center; color: var(--info-text);">©Todos los derechos reservados</p>
-    
     </footer>
     
     

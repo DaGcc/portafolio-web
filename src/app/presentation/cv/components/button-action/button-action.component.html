@@ -1,0 +1,5 @@
+<button class="btn-link"  [matTooltip]="textAlt()? textAlt() : ''">
+    <img class="btn-link__img" [src]="pathIcon()" [alt]="" draggable="false">
+
+    <span *ngIf="text() != undefined" class="btn-link__text">{{text()}}</span>
+</button>

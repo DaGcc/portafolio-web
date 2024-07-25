@@ -23,13 +23,13 @@ h1,h2,h3,h4,h5,h6,p,samp{
 
     --tw-text-opacity: .9;
 
-
     --title-color: #fff;
     --sub-title: rgb(115, 164, 214);
     --text: rgb(216 227 238/var(--tw-text-opacity));
     --info-text: rgba(206, 212, 218, 0.6);
 
-    --background-page: #102035;
+    --code-background-page :  16 32 53;
+    --background-page: rgb(16, 32, 53);
     --background-widget-one: #273d60d1;
     --background-widget-two: #18273F;
     --background-widget-three: #5855ff;
@@ -43,10 +43,15 @@ h1,h2,h3,h4,h5,h6,p,samp{
 
     --border-radius-btn: 5px;
     --border-radius-badge: 20px; 
+    --border-radius-widget: 20px;
 
-    --top: 18px;
+    --top: 18px;    
 }
 
+.--shadow {
+    box-shadow: 10px 10px 20px rgb(var(--code-background-page)/var(--tw-text-opacity)),
+        -10px -10px 20px var(--background-page);
+}
 
 
 body.dark-mode {

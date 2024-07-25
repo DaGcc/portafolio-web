@@ -1,0 +1,4 @@
+.timeline{
+  height: 500px;
+  border-radius: var(--border-radius-widget);
+}

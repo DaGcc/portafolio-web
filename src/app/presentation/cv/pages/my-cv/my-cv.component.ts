@@ -10,6 +10,7 @@ import { delay, Subscription } from 'rxjs';
 import { BadgeComponent } from '@presentation/cv/components/badge/badge.component';
 import { CardProjectComponent } from '@presentation/cv/components/card-project/card-project.component';
 import { ButtonLinkComponent } from '@presentation/cv/components/button-link/button-link.component';
+import { TimelineComponent } from '@presentation/cv/components/timeline/timeline.component';
 
 @Component({
   selector: 'app-my-cv',
@@ -21,7 +22,8 @@ import { ButtonLinkComponent } from '@presentation/cv/components/button-link/but
     SkeletonComponent,
     BadgeComponent,
     CardProjectComponent,
-    ButtonLinkComponent
+    ButtonLinkComponent,
+    TimelineComponent
   ],
   providers: [
     {
@@ -54,7 +56,7 @@ export class MyCvComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void { 
 
-    this.cv$ = this.cvRepository.readFileJsonCV('assets/json/cv.json').pipe(delay(2000)).subscribe({
+    this.cv$ = this.cvRepository.readFileJsonCV('assets/json/cv.json').pipe(delay(0)).subscribe({
       next: (data: CvEntity) => {
         this.dataCV.set({isLoad: data ? true : false, cv: data})
       }

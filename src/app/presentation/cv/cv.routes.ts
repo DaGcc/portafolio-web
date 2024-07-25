@@ -11,7 +11,7 @@ const routes: Routes = [
             {
                 path : 'my-cv',
                 loadComponent : () => import("@presentation/cv/pages/my-cv/my-cv.component").then(m => m.MyCvComponent ),
-                title : 'My cv'
+                title : 'Portafolio :: CV'
             },
             {
                 path : '',
