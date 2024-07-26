@@ -11,6 +11,7 @@ import { BadgeComponent } from '@presentation/cv/components/badge/badge.componen
 import { CardProjectComponent } from '@presentation/cv/components/card-project/card-project.component';
 import { ButtonLinkComponent } from '@presentation/cv/components/button-link/button-link.component';
 import { TimelineComponent } from '@presentation/cv/components/timeline/timeline.component';
+import { HeaderComponent } from '@presentation/cv/components/header/header.component';
 
 @Component({
   selector: 'app-my-cv',
@@ -23,7 +24,8 @@ import { TimelineComponent } from '@presentation/cv/components/timeline/timeline
     BadgeComponent,
     CardProjectComponent,
     ButtonLinkComponent,
-    TimelineComponent
+    TimelineComponent,
+    HeaderComponent
   ],
   providers: [
     {

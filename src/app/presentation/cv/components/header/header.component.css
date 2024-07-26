@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-widget-two);
+  border-radius: var(--border-radius-widget);
+  /* border: 1px solid var(--background-widget-one); */
+  width: 100%;
+  /* height: 45px; */
+  padding: 8px 12px;
+}
+
+
+.header__icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+}
+
+.header__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.header__img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.shadow-angular::after{
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right bottom, #ff37dc, #f00aa4, #d80074, #b9004b, #97002b, #96002a, #940029, #930028, #b10048, #c50078, #c400b6, #9b00ff);
+  filter: blur(8px);
+} 
+
+.header__actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}

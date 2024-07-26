@@ -29,13 +29,26 @@ h1,h2,h3,h4,h5,h6, p{
   }
 } */
 
-.main { 
+
+.component-header, .main{
+  display: block;
   margin: auto;
   padding: 20px 15px;
-  /* height: 100%; */
-  /* background-color:var(--background-page); */
   width: 100%;
   max-width: 860px;
+}
+.component-header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-bottom: 0;
+  backdrop-filter: blur(12px);
+  border-radius: 0 0 var(--border-radius-widget) var(--border-radius-widget);
+}
+
+.main { 
+  /* height: 100%; */
+  /* background-color:var(--background-page); */
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -321,6 +334,7 @@ ul {
   left: 15px;
   top: 0;
   bottom: 0;
+  z-index: 100;
   margin: auto;
   background : var(--background-widget-two);
   padding: 11px 11px;

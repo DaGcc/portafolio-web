@@ -5,6 +5,10 @@
 
 @if ( dataCV().isLoad && dataCV().cv != undefined && cv() != undefined ) {
     
+
+    <!--* HEADER  -->
+    <component-header class="component-header"/>
+
     <!--* ASIDE  -->
     <aside class="aside --shadow">
         <div class="side-actions">
@@ -106,7 +110,7 @@
             <section class="cards">
     
                 @for (project of cv()!.projects; track $index) {
-                    <component-card-project [project]="project"/>
+                    <component-card-project [project]="project"  withShadow/>
                 }
     
             </section>
@@ -136,7 +140,6 @@
             </div> -->
             <span> CARGANDO DATOS...</span>
         </section>
-        
     </main>
 }
 

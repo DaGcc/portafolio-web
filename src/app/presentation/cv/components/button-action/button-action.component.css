@@ -1,47 +1,51 @@
+.btn-transparent{
+  background: transparent !important;
+}
 
-.btn-link{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  background-color: var(--background-btn-two);
-  padding: 3px 7px;
-  border-radius: var(--border-radius-btn);
-  text-decoration: none;
-  font-size: small;
-  backdrop-filter: blur(5px);
-  transition: all .3s ease-in-out;
-
-  user-select: none;
-  
-  & .btn-link__img {
-    /* width: 100%; */
-    width: 23px;
-    /* height: 25px; */
+.btn-warn {
+  background-color: var(--background-btn-warn);
+  color: var(--color-btn-warn);
+  & > .btn-icon .btn-img {
+    filter: var(--color-icon-warn);
   }
-
-  & .btn-link__text{
-    text-align: normal;
-    color: var(--text);
-  }
-
   &:hover{
-    background-color: var(--background-widget-one);
-    /* background-color: var(--background-widget-three); */
-    color: var(--background-btn-one);
+    background-color: var(--background-btn-warn-hover ) !important;
   }
+}
 
-  &:focus-visible{
-    border: none;
-    outline: none;
-    outline-offset: 0px;
-    background-color: var(--background-widget-one);
-    color: var(--background-btn-one);
+.btn-primary {
+  background-color: var(--background-btn-primary);
+  color: var(--color-btn-primary);
+  & > .btn-icon .btn-img {
+    filter: var(--color-icon-primary);
+  }
+  &:hover{
+    background-color: var(--background-btn-primary-hover) !important;
+  }
+}
+
+.btn-accent {
+  background-color: var(--background-btn-warn);
+  color: var(--color-btn-accent);
+  & > .btn-icon .btn-img {
+    filter: var(--color-icon-accent);
+  }
+  &:hover{
+    background-color: var(--background-btn-accent-hover) !important;
+  }
+}
+
+.btn-disabled{
+  background-color: var(--background-btn-disabled) !important;
+  color: var(--color-btn-disabled);
+  & > .btn-icon .btn-img {
+    filter: var(--color-icon-disabled);
   }
 }
 
 
+/** ESTILOS DE BTN  */
 
 
+
+/*! END ESTILOS BTN  */

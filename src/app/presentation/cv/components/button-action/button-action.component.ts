@@ -1,13 +1,14 @@
-import { CommonModule, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, input, type OnInit } from '@angular/core';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import { CommonModule, NgClass, NgIf } from '@angular/common';
+import { ChangeDetectionStrategy, Component, computed, effect, Input, input, InputSignal, Output, signal, type OnInit } from '@angular/core';
+import { EventEmitter } from 'stream';
+
 
 @Component({
-  selector: 'app-button-action',
+  selector: 'component-button-action',
   standalone: true,
   imports: [
     NgIf,
-    MatTooltipModule
+    NgClass
   ],
   templateUrl: './button-action.component.html',
   styleUrl: './button-action.component.css',
@@ -19,8 +20,59 @@ export class ButtonActionComponent implements OnInit {
   public text = input<(string | undefined)>(undefined);
   public pathIcon = input<string>();
 
-  
+  public disabled : InputSignal<boolean, string | boolean> = input<boolean, string | boolean>(false, {
+    transform : (value : (string | boolean)) => typeof value === 'string' ? value==='': value
+  })
+  public transparent :  InputSignal<boolean, string | boolean> = input<boolean, string | boolean>(false, {
+    transform : (value : (string | boolean)) => typeof value === 'string' ? value==='': value
+  })
 
-  ngOnInit(): void { }
+  public colorClassBtn = signal<string | undefined>(undefined);
+
+  @Input()
+  set color(valor : 'primary' | 'warn' | 'accent' ){
+
+    if(valor === 'primary'){
+      this.colorClassBtn.set('btn-primary')
+      return ;
+    }
+    if(valor === 'accent'){
+      this.colorClassBtn.set('btn-accent');
+      return;
+    }
+    if(valor === 'warn'){
+      this.colorClassBtn.set('btn-warn');
+      return;
+    }
+
+  }
+
+  public classList = computed<string | string[] | Set<string> | { [klass: string]: boolean;} | null | undefined>(() => { 
+
+    const arrClass : string[] = []; 
+
+    if(this.colorClassBtn()!=undefined){
+      arrClass.push(this.colorClassBtn()!);
+    }
+    if(this.transparent()){
+      arrClass.push('btn-transparent')
+    }
+    if(this.disabled()){
+      arrClass.push('btn-disabled')
+    }
+
+    return arrClass
+  })
+
+
+  //* EVENT EMITERS 
+
+  // @Output()
+  // public cClick = new EventEmitter<void>();
+
+
+  ngOnInit(): void { 
+
+  }
 
 }
