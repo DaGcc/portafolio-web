@@ -1,6 +1,5 @@
 import { CommonModule, IMAGE_CONFIG, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, type OnInit, CUSTOM_ELEMENTS_SCHEMA, inject, signal, computed, OnDestroy } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
 
 
 import { CvRepositoryImplService } from '@infraestructure/repositories/cv/cv.repository.impl.service';
