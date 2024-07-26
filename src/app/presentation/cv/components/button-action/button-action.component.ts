@@ -68,8 +68,7 @@ export class ButtonActionComponent implements OnInit {
   //* EVENT EMITERS 
 
   // @Output()
-  // public cClick = new EventEmitter<void>();
-
+  
 
   ngOnInit(): void { 
 
