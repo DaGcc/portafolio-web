@@ -1,6 +1,7 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject, type OnInit } from '@angular/core';
 import { ButtonActionComponent } from '../button-action/button-action.component';
+import { ThemeService } from 'src/app/shared/services/theme/theme.service';
 
 @Component({
   selector: 'component-header',
@@ -13,13 +14,16 @@ import { ButtonActionComponent } from '../button-action/button-action.component'
   styleUrl: './header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  ngOnInit(): void { }
-
+  
+  private _themeService : ThemeService = inject(ThemeService);
 
   toggleMode(e : Event){
-    console.log(e)
+
+    this._themeService.toggleThemeMode();
+    console.log(this._themeService.isDark())
+
   }
 
 }

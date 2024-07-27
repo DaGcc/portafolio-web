@@ -25,28 +25,34 @@ h1,h2,h3,h4,h5,h6,p,samp, button{
 
     --title-color: #fff;
     --sub-title: rgb(115, 164, 214);
-    --text: rgb(216 227 238/var(--tw-text-opacity));
-    --info-text: rgba(206, 212, 218, 0.6);
+    /* --text: rgb(216 227 238/var(--tw-text-opacity)); */
+    --text: #000c;
+    --info-text: rgb(31 41 55 / var(--tw-text-opacity));
 
-    --code-background-page :  16 32 53;
-    --background-page: rgb(16, 32, 53);
-    --background-widget-one: #273d60d1;
-    --background-widget-two: #18273F;
+    --code-background-page :  255 255 255;
+    --background-page: linear-gradient(to right, #f5f5f5, transparent 1px), linear-gradient(to bottom, #f5f5f5, transparent 1px);
+    --background-widget-one: #e8e7ff95;
+    --background-widget-two: #ffff;
     --background-widget-three: #5855ff;
-    --background-widget-four: #161616;
+    --background-widget-four: #e5e2e2;
     --border-color: #328AF1;
+
+    --bakground-tag: #F3F4F6;
 
     --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff);
 
     --background-btn-one: #85A5A7;
-    --background-btn-two: #0f1f39a6;
+    --background-btn-two: #e8e7ff95;
 
     --border-radius-btn: 5px;
     --border-radius-badge: 20px; 
     --border-radius-widget: 20px;
 
+    
+    --shadow : 10px 10px 20px rgb(216 227 238/var(--tw-text-opacity)),
+    -10px -12px 20px rgb(var(--code-background-page));
+    
     --top: 18px;    
-
 
 
     /** **** CLASS FROM BOTONS **** */
@@ -79,15 +85,14 @@ h1,h2,h3,h4,h5,h6,p,samp, button{
 }
 
 .--shadow {
-    box-shadow: 10px 10px 20px rgb(11 22 41 / 51%), 
-                -10px -10px 20px rgb(0 16 39 / 22%)
+    box-shadow: var(--shadow)
 }
 
 
 body.dark-mode {
 
 
-    --title-color: #fff;
+    /* --title-color: #fff;
     --sub-title: #999;
     --text: #9b9b9b;
     --info-text: rgba(206, 212, 218, 0.6);
@@ -97,7 +102,28 @@ body.dark-mode {
     --background-widget-four: #161616;
     --border-color: #6e28ccff;
 
+    --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff); */
+
+    --title-color: #fff;
+    --sub-title: rgb(115, 164, 214);
+    --text: rgb(216 227 238/var(--tw-text-opacity));
+    --info-text: rgba(206, 212, 218, 0.6);
+    
+    --code-background-page :  16 32 53;
+    --background-page: rgb(16, 32, 53);
+    --background-widget-one: #273d60d1;
+    --background-widget-two: #18273F;
+    --background-widget-three: #5855ff;
+    --background-widget-four: #161616;
+    --border-color: #328AF1;
+
     --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff);
+
+    --background-btn-one: #85A5A7;
+    --background-btn-two: #0f1f39a6;
+
+    --shadow : 10px 10px 20px rgb(11 22 41 / 51%), 
+    -10px -10px 20px rgb(0 16 39 / 22%);
 }
 
 
@@ -116,7 +142,7 @@ body {
 }
 body {
     overflow: auto;
-    background-color: var(--background-page) !important;
+    background: var(--background-page) !important;
 }
 
 
