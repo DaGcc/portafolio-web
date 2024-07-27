@@ -17,4 +17,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void { }
 
+
+  toggleMode(e : Event){
+    console.log(e)
+  }
+
 }

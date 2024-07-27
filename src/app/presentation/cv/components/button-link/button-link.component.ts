@@ -15,7 +15,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 })
 export class ButtonLinkComponent implements OnInit {
 
-  public link : InputSignal<string , string> = input.required<string>()
+  public link : InputSignal<string> = input.required<string>()
   public target = input<'_black' | '_parent' | '_selft' | '_top'>('_black');
   public pathIcon = input<string>()
   public textAlt = input<string>('');

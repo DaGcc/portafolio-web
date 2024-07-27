@@ -1,4 +1,4 @@
-<button class="btn" [ngClass]="classList()" >
+<button class="btn" [ngClass]="classList()" (click)="cClick.emit($event)">
     <figure class="btn-icon" *ngIf="pathIcon()!=undefined && pathIcon()!= ''">
         <img class="btn-img" [src]="pathIcon()">
     </figure>

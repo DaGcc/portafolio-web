@@ -1,5 +1,5 @@
 import { CommonModule, NgClass, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, effect, Input, input, InputSignal, Output, signal, type OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, Input, input, InputSignal, InputSignalWithTransform, output, Output, OutputEmitterRef, Signal, signal, type OnInit } from '@angular/core';
 import { EventEmitter } from 'stream';
 
 
@@ -16,14 +16,16 @@ import { EventEmitter } from 'stream';
 })
 export class ButtonActionComponent implements OnInit {
 
-  public textAlt = input<string>('');
-  public text = input<(string | undefined)>(undefined);
+  
+  public textAlt : InputSignal<string | undefined> = input<string | undefined>(undefined);
+
+  public text : InputSignal<string | undefined> = input<string | undefined>(undefined);
   public pathIcon = input<string>();
 
-  public disabled : InputSignal<boolean, string | boolean> = input<boolean, string | boolean>(false, {
+  public disabled : InputSignalWithTransform<boolean, string | boolean> = input<boolean, string | boolean>(false, {
     transform : (value : (string | boolean)) => typeof value === 'string' ? value==='': value
   })
-  public transparent :  InputSignal<boolean, string | boolean> = input<boolean, string | boolean>(false, {
+  public transparent :  InputSignalWithTransform<boolean, string | boolean> = input<boolean, string | boolean>(false, {
     transform : (value : (string | boolean)) => typeof value === 'string' ? value==='': value
   })
 
@@ -67,7 +69,7 @@ export class ButtonActionComponent implements OnInit {
 
   //* EVENT EMITERS 
 
-  // @Output()
+  public cClick : OutputEmitterRef<Event> = output<Event>();
   
 
   ngOnInit(): void { 

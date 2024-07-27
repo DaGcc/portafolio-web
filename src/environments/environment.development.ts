@@ -2,7 +2,8 @@ export const environment = {
 
 
     PORT_APP: '4200',
-    IP_APP: 'localhost'
+    IP_APP: 'localhost',
+    THEME_MODE: 'theme'
 
 
 };
