@@ -16,6 +16,7 @@
   flex-direction: row;
   align-items: center;
   width: max-content;
+  gap: 8px;
 }
 
 .header__icon {
