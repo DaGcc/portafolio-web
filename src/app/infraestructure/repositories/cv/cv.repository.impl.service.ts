@@ -12,7 +12,7 @@ export class CvRepositoryImplService extends CvReporitory{
 
   private readonly _http : HttpClient = inject(HttpClient)
   
-  private readonly _url : string = `http://${environment.IP_APP}:${environment.PORT_APP}`
+  // private readonly _url : string = `http://${environment.IP_APP}:${environment.PORT_APP}`
 
   constructor() { 
     super();
@@ -20,7 +20,7 @@ export class CvRepositoryImplService extends CvReporitory{
 
 
   override readFileJsonCV( jsonName : string ): Observable<CvEntity> {
-    return this._http.get<CvEntity>(`${this._url}/${jsonName}`);
+    return this._http.get<CvEntity>(`${jsonName}`);
   }
 
 
