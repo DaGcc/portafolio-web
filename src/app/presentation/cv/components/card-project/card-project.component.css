@@ -8,6 +8,7 @@ ul {
   height: 100%;
   display: flex;
   font-family: "Inconsolata", monospace;
+  background: transparent;
 }
 
 .card__body {
@@ -19,9 +20,10 @@ ul {
   justify-content: space-between;
   gap: 12px;
   /* border: 1px solid var(--border-color); */
-  /* background-color: var(--background-widget-one); */
-  border: 1px solid var(--background-widget-one);
+  background-color: var(--background-widget-one);
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius-widget);
+
 
   & .card__head {
     width: 100%;

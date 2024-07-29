@@ -2,7 +2,7 @@
     "basics": {
         "name": "Daniel Amadeo Gutierrez Ccallasaca",
         "label": "Programador Full Stack",
-        "image": "assets/img/perfil/perfil.jpeg",
+        "image": "/assets/img/perfil/perfil.jpeg",
         "email": "gutierrezcallazacadaniel@gmail.com",
         "phone": "+51 906 529 726",
         "url": "https://dgc.com",
@@ -19,19 +19,19 @@
                 "network": "Github",
                 "username": "DaGcc",
                 "url": "https://github.com/DaGcc",
-                "image": "assets/img/icons/github2.svg"
+                "image": "/assets/img/icons/github2.svg"
             },
             {
                 "network": "Linkedin",
                 "username": "Daniel Gutiérrez",
                 "url": "https://www.linkedin.com/in/daniel-gutiérrez-8648832a9/",
-                "image": "assets/img/icons/linkedin2.svg"
+                "image": "/assets/img/icons/linkedin2.svg"
             },
             {
                 "network": "WhastApp",
                 "username": "Daniel",
                 "url": "https://wa.me/906529726",
-                "image": "assets/img/icons/whastapp.svg"
+                "image": "/assets/img/icons/whastapp.svg"
             }
         ]
     },
@@ -111,52 +111,52 @@
             "utils": [
                 {
                     "name": "HTML",
-                    "urlImage": "assets/img/icons/html.svg",
+                    "urlImage": "/assets/img/icons/html.svg",
                     "level": 1
                 },
                 {
                     "name": "CSS",
-                    "urlImage": "assets/img/icons/css.svg",
+                    "urlImage": "/assets/img/icons/css.svg",
                     "level": 1
                 },
                 {
                     "name": "SCSS",
-                    "urlImage": "assets/img/icons/sass.svg",
+                    "urlImage": "/assets/img/icons/sass.svg",
                     "level": 1
                 },
                 {
                     "name": "JavaScript",
-                    "urlImage": "assets/img/icons/JS.svg",
+                    "urlImage": "/assets/img/icons/JS.svg",
                     "level": 1
                 },
                 {
                     "name": "TypeScript",
-                    "urlImage": "assets/img/icons/ts.svg",
+                    "urlImage": "/assets/img/icons/ts.svg",
                     "level": 1
                 },
                 {
                     "name": "Angular",
-                    "urlImage": "assets/img/icons/angular.ico",
+                    "urlImage": "/assets/img/icons/angular.ico",
                     "level": 1
                 },
                 {
                     "name": "ASP .Net",
-                    "urlImage": "assets/img/icons/asp.ico",
+                    "urlImage": "/assets/img/icons/asp.ico",
                     "level": 1
                 },
                 {
                     "name": "Bootstrap",
-                    "urlImage": "assets/img/icons/bootstrap.svg",
+                    "urlImage": "/assets/img/icons/bootstrap.svg",
                     "level": 1
                 },
                 {
                     "name": "PrimeNG",
-                    "urlImage": "assets/img/icons/primeng-logo.webp",
+                    "urlImage": "/assets/img/icons/primeng-logo.webp",
                     "level": 1
                 },
                 {
                     "name": "Angular Material",
-                    "urlImage": "assets/img/icons/angular-material.png",
+                    "urlImage": "/assets/img/icons/angular-material.png",
                     "level": 1
                 }
             ]
@@ -166,22 +166,22 @@
             "utils": [
                 {
                     "name": "Java",
-                    "urlImage": "assets/img/icons/java.svg",
+                    "urlImage": "/assets/img/icons/java.svg",
                     "level": 1
                 },
                 {
                     "name": "Spring Boot",
-                    "urlImage": "assets/img/icons/spring-boot2.svg",
+                    "urlImage": "/assets/img/icons/spring-boot2.svg",
                     "level": 1
                 },
                 {
                     "name": "C#",
-                    "urlImage": "assets/img/icons/c-sharp.svg",
+                    "urlImage": "/assets/img/icons/c-sharp.svg",
                     "level": 1
                 },
                 {
                     "name": "PHP",
-                    "urlImage": "assets/img/icons/php.png",
+                    "urlImage": "/assets/img/icons/php.png",
                     "level": 1
                 }
             ]
@@ -191,17 +191,17 @@
             "utils": [
                 {
                     "name": "PostgreSQL",
-                    "urlImage": "assets/img/icons/postgresql.webp",
+                    "urlImage": "/assets/img/icons/postgresql.webp",
                     "level": 1
                 },
                 {
                     "name": "Microsoft SQL server",
-                    "urlImage": "assets/img/icons/sqlserver.png",
+                    "urlImage": "/assets/img/icons/sqlserver.png",
                     "level": 1
                 },
                 {
                     "name": "MySql",
-                    "urlImage": "assets/img/icons/sql.png",
+                    "urlImage": "/assets/img/icons/sql.png",
                     "level": 1
                 }
             ]
@@ -211,12 +211,12 @@
             "utils": [
                 {
                     "name": "Git",
-                    "urlImage": "assets/img/icons/git.svg",
+                    "urlImage": "/assets/img/icons/git.svg",
                     "level": 1
                 },
                 {
                     "name": "Github",
-                    "urlImage": "assets/img/icons/github2.svg",
+                    "urlImage": "/assets/img/icons/github2.svg",
                     "level": 1
                 }
             ]
@@ -259,37 +259,37 @@
                 "Won award at AIHacks 2016"
             ],
             "images" : [
-                "assets/img/panels/proyecto-plantilla.webp"
+                "/assets/img/panels/proyecto-plantilla.webp"
             ],
             "technologies": [
                 {
                     "name": "Angular",
-                    "urlImage": "assets/img/icons/angular.ico",
+                    "urlImage": "/assets/img/icons/angular.ico",
                     "level": 1
                 },
                 {
                     "name": "PrimeNG",
-                    "urlImage": "assets/img/icons/primeng-logo.webp",
+                    "urlImage": "/assets/img/icons/primeng-logo.webp",
                     "level": 1
                 },
                 {
                     "name": "Angular Material",
-                    "urlImage": "assets/img/icons/angular-material.png",
+                    "urlImage": "/assets/img/icons/angular-material.png",
                     "level": 1
                 },
                 {
                     "name": "TypeScript",
-                    "urlImage": "assets/img/icons/ts.svg",
+                    "urlImage": "/assets/img/icons/ts.svg",
                     "level": 1
                 },
                 {
                     "name": "HTML",
-                    "urlImage": "assets/img/icons/html.svg",
+                    "urlImage": "/assets/img/icons/html.svg",
                     "level": 1
                 },
                 {
                     "name": "CSS",
-                    "urlImage": "assets/img/icons/css.svg",
+                    "urlImage": "/assets/img/icons/css.svg",
                     "level": 1
                 }
                 
@@ -299,7 +299,7 @@
                     "network": "Github",
                     "username": "DaGcc",
                     "url": "https://github.com/DaGcc",
-                    "image": "assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github2.svg"
                 }
             ]
         },
@@ -312,33 +312,33 @@
                 "Won award at AIHacks 2016"
             ],
             "images" : [
-                "assets/img/panels/proyecto-map.webp",
-                "assets/img/panels/proyecto-map.webp"
+                "/assets/img/panels/proyecto-map.webp",
+                "/assets/img/panels/proyecto-map.webp"
             ],
             "technologies": [
                 {
                     "name": "Angular",
-                    "urlImage": "assets/img/icons/angular.ico",
+                    "urlImage": "/assets/img/icons/angular.ico",
                     "level": 1
                 },
                 {
                     "name": "Angular Material",
-                    "urlImage": "assets/img/icons/angular-material.png",
+                    "urlImage": "/assets/img/icons/angular-material.png",
                     "level": 1
                 },
                 {
                     "name": "TypeScript",
-                    "urlImage": "assets/img/icons/ts.svg",
+                    "urlImage": "/assets/img/icons/ts.svg",
                     "level": 1
                 },
                 {
                     "name": "HTML",
-                    "urlImage": "assets/img/icons/html.svg",
+                    "urlImage": "/assets/img/icons/html.svg",
                     "level": 1
                 },
                 {
                     "name": "CSS",
-                    "urlImage": "assets/img/icons/css.svg",
+                    "urlImage": "/assets/img/icons/css.svg",
                     "level": 1
                 }
             ],
@@ -347,7 +347,7 @@
                     "network": "Github",
                     "username": "DaGcc",
                     "url": "https://github.com/DaGcc/APP-MAP",
-                    "image": "assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github2.svg"
                 }
             ]
         },
@@ -360,47 +360,47 @@
                 "Won award at AIHacks 2016"
             ],
             "images" : [
-                "assets/img/panels/proyecto-map.webp"
+                "/assets/img/panels/proyecto-map.webp"
             ],
             "technologies": [
                 {
                     "name": "Spring Boot",
-                    "urlImage": "assets/img/icons/spring-boot2.svg",
+                    "urlImage": "/assets/img/icons/spring-boot2.svg",
                     "level": 1
                 },
                 {
                     "name": "Microsoft SQL server",
-                    "urlImage": "assets/img/icons/sqlserver.png",
+                    "urlImage": "/assets/img/icons/sqlserver.png",
                     "level": 1
                 },
                 {
                     "name": "Angular",
-                    "urlImage": "assets/img/icons/angular.ico",
+                    "urlImage": "/assets/img/icons/angular.ico",
                     "level": 1
                 },
                 {
                     "name": "Angular Material",
-                    "urlImage": "assets/img/icons/angular-material.png",
+                    "urlImage": "/assets/img/icons/angular-material.png",
                     "level": 1
                 },
                 {
                     "name": "PrimeNG",
-                    "urlImage": "assets/img/icons/primeng-logo.webp",
+                    "urlImage": "/assets/img/icons/primeng-logo.webp",
                     "level": 1
                 },
                 {
                     "name": "TypeScript",
-                    "urlImage": "assets/img/icons/ts.svg",
+                    "urlImage": "/assets/img/icons/ts.svg",
                     "level": 1
                 },
                 {
                     "name": "HTML",
-                    "urlImage": "assets/img/icons/html.svg",
+                    "urlImage": "/assets/img/icons/html.svg",
                     "level": 1
                 },
                 {
                     "name": "CSS",
-                    "urlImage": "assets/img/icons/css.svg",
+                    "urlImage": "/assets/img/icons/css.svg",
                     "level": 1
                 }
             ],
@@ -409,7 +409,7 @@
                     "network": "Github",
                     "username": "DaGcc",
                     "url": "https://github.com/DaGcc/PROYECTO-WEB-APP-DNS_ANGULAR",
-                    "image": "assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github2.svg"
                 }
             ]
         },
@@ -422,37 +422,37 @@
                 "Won award at AIHacks 2016"
             ],
             "images" : [
-                "assets/img/panels/proyecto-chat.webp"
+                "/assets/img/panels/proyecto-chat.webp"
             ],
             "technologies": [
                 {
                     "name": "Spring Boot",
-                    "urlImage": "assets/img/icons/spring-boot2.svg",
+                    "urlImage": "/assets/img/icons/spring-boot2.svg",
                     "level": 1
                 },
                 {
                     "name": "Angular",
-                    "urlImage": "assets/img/icons/angular.ico",
+                    "urlImage": "/assets/img/icons/angular.ico",
                     "level": 1
                 },
                 {
                     "name": "Angular Material",
-                    "urlImage": "assets/img/icons/angular-material.png",
+                    "urlImage": "/assets/img/icons/angular-material.png",
                     "level": 1
                 },
                 {
                     "name": "TypeScript",
-                    "urlImage": "assets/img/icons/ts.svg",
+                    "urlImage": "/assets/img/icons/ts.svg",
                     "level": 1
                 },
                 {
                     "name": "HTML",
-                    "urlImage": "assets/img/icons/html.svg",
+                    "urlImage": "/assets/img/icons/html.svg",
                     "level": 1
                 },
                 {
                     "name": "CSS",
-                    "urlImage": "assets/img/icons/css.svg",
+                    "urlImage": "/assets/img/icons/css.svg",
                     "level": 1
                 }
             ],
@@ -461,13 +461,13 @@
                     "network": "Github",
                     "username": "Front-End",
                     "url": "https://github.com/DaGcc/APP-MAP",
-                    "image": "assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github2.svg"
                 },
                 {
                     "network": "Github",
                     "username": "Back-End",
                     "url": "https://github.com/DaGcc/CHAT-APP-BACK",
-                    "image": "assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github2.svg"
                 } 
                 
             ]

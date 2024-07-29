@@ -6,6 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+
+    &:hover{
+        outline: none;
+    }
 }
 
 h1,h2,h3,h4,h5,h6,p,samp, button{
@@ -30,32 +35,42 @@ h1,h2,h3,h4,h5,h6,p,samp, button{
     --info-text: rgb(31 41 55 / var(--tw-text-opacity));
 
     --code-background-page :  255 255 255;
-    --background-page: linear-gradient(to right, #f5f5f5, transparent 1px), linear-gradient(to bottom, #f5f5f5, transparent 1px);
-    --background-widget-one: #e8e7ff95;
+    /* --background-page: linear-gradient(to right, #f5f5f5, transparent 1px), linear-gradient(to bottom, #f5f5f5, transparent 1px); */
+    --background-page: #fff;
+    --background-widget-one: #fff;
     --background-widget-two: #ffff;
     --background-widget-three: #5855ff;
     --background-widget-four: #e5e2e2;
-    --border-color: #328AF1;
+    
+    --border-color : #e4eaf4b3;
 
-    --bakground-tag: #F3F4F6;
-
-    --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff);
+    
+    --linear-one: linear-gradient(to right bottom, #ff0059, #ff0079, #f8009b, #e723bc, #cc42db, #dd3ed5, #ed3bcf, #fc39c8, #ff3695, #ff5d63, #ff8935, #ffb100);
 
     --background-btn-one: #85A5A7;
-    --background-btn-two: #e8e7ff95;
+    --background-btn-two: #7f5cff34;
 
     --border-radius-btn: 5px;
     --border-radius-badge: 20px; 
     --border-radius-widget: 20px;
 
     
-    --shadow : 10px 10px 20px rgb(216 227 238/var(--tw-text-opacity)),
-    -10px -12px 20px rgb(var(--code-background-page));
+    --shadow : 10px 10px 20px rgba(189, 223, 254, 0.248),
+    -10px -10px 25px #d8ecff5a;
     
     --top: 18px;    
 
-
-    /** **** CLASS FROM BOTONS **** */
+    
+    
+    /** VARIABLES PARA BADGE */
+    --background-badge-one: #edf4ff;
+    --background-badge-one-hover: #7f5cffcd;
+    /* --color-badge: #328AF1; */
+    --color-badge: rgb(75 85 99);
+    --color-badge-hover: #fff;
+    /*! END - VARIABLES PARA BADGE */
+    
+    /** **** VARIABLES PARA BOTONS **** */
     
     --background-btn-basic: #2262e2 ;
     --background-btn-primary: #5855ff;
@@ -80,7 +95,7 @@ h1,h2,h3,h4,h5,h6,p,samp, button{
     --color-icon-primary:  invert(87%) sepia(56%) saturate(4472%) hue-rotate(181deg) brightness(101%) contrast(101%);
     --color-icon-disabled:  invert(74%) sepia(7%) saturate(165%) hue-rotate(212deg) brightness(80%) contrast(81%);
 
-    /*! **** CLASS FROM BOTONS **** */
+    /*! **** VARIABLES PARA BOTONS **** */
 
 }
 
@@ -104,26 +119,47 @@ body.dark-mode {
 
     --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff); */
 
+    /** VARIABLES MAIN  */
+    --code-background-page :  16 32 53;
+    --background-page: rgb(16, 32, 53);
+
     --title-color: #fff;
     --sub-title: rgb(115, 164, 214);
     --text: rgb(216 227 238/var(--tw-text-opacity));
     --info-text: rgba(206, 212, 218, 0.6);
+
+    --shadow : 10px 10px 20px rgb(11 22 41 / 51%), 
+    -10px -10px 20px rgb(0 16 39 / 22%);
+
+    /*! END - VARIABLES MAIN  */
+
+
+    /** VARIABLES PARA BADGE */
+    --background-badge-one: #18273F;
+    --background-badge-one-hover: #273d60d1;
+    /* --color-badge: rgb(216 227 238/var(--tw-text-opacity)); */
+    --color-badge: rgb(148 163 184 / var(--tw-text-opacity));;
+    --color-badge-hover: rgb(216 227 238/var(--tw-text-opacity));
+    /*! END - VARIABLES PARA BADGE */
     
-    --code-background-page :  16 32 53;
-    --background-page: rgb(16, 32, 53);
-    --background-widget-one: #273d60d1;
+    
+    /** VARIABLES WIDGETS  */
+
+    --background-widget-one: rgb(16, 32, 53);
     --background-widget-two: #18273F;
     --background-widget-three: #5855ff;
     --background-widget-four: #161616;
-    --border-color: #328AF1;
+     
+    --border-color : #273d60d1;
+    /*! END - VARIABLES WIDGETS  */
+
 
     --linear-one: linear-gradient(to right bottom, #7f5cff, #7453fb, #6849f6, #5c40f2, #4e36ed, #4c3fef, #4b47f0, #4b4ff1, #5b67f7, #6e7efb, #8294fe, #97a9ff);
 
     --background-btn-one: #85A5A7;
     --background-btn-two: #0f1f39a6;
 
-    --shadow : 10px 10px 20px rgb(11 22 41 / 51%), 
-    -10px -10px 20px rgb(0 16 39 / 22%);
+
 }
 
 
@@ -136,6 +172,7 @@ body {
     margin: 0;
     /* font-family: Roboto, "Helvetica Neue", sans-serif; */
     font-family: "Inconsolata", monospace;
+    transition: all 0.1s ease-in;
 }
 .font {
     font-family: "Inconsolata", monospace;
@@ -145,7 +182,9 @@ body {
     background: var(--background-page) !important;
 }
 
-
+.component{
+    background: tra;
+}
 .container {
     padding: 8px;
     color: var(--text);

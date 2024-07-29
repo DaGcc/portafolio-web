@@ -70,7 +70,7 @@
                 </div>
     
                 <figure class="figure">
-                    <img class="figure__img obtetivo__img" src="../../../../../assets/img/panels/developer-isometric.svg" alt="fnd">
+                    <img class="figure__img obtetivo__img" src="/assets/img/panels/developer-isometric.svg" alt="fnd">
                 </figure>
     
             </div>
@@ -87,12 +87,55 @@
             <!--* skills -->
             <ul class="skills">
     
+                
                 @for (skill of cv()!.skills; track $index) {
-                    @for (util of skill.utils; track $index) {
-                        <li class="skills__skill">
-                            <component-badge [text]="util.name" [src]="util.urlImage" />
-                        </li>
-                    }
+                    <li class="skills__type">
+                        <ul class="skills__content" >
+                            @for (util of skill.utils; track $index) {
+                                <li class="skills__skill" >
+                                    <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                </li>   
+                            }
+                        </ul>
+                        <ul class="skills__content">
+                            @for (util of skill.utils; track $index) {
+                                <li class="skills__skill" >
+                                    <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                </li>   
+                            }
+                        </ul>
+                        @if (skill.utils.length<8) {
+                            <ul class="skills__content">
+                                @for (util of skill.utils; track $index) {
+                                    <li class="skills__skill" >
+                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                    </li>   
+                                }
+                            </ul>
+                            <ul class="skills__content">
+                                @for (util of skill.utils; track $index) {
+                                    <li class="skills__skill" >
+                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                    </li>   
+                                }
+                            </ul>
+                            <ul class="skills__content">
+                                @for (util of skill.utils; track $index) {
+                                    <li class="skills__skill" >
+                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                    </li>   
+                                }
+                            </ul>
+                            <ul class="skills__content">
+                                @for (util of skill.utils; track $index) {
+                                    <li class="skills__skill" >
+                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                    </li>   
+                                }
+                            </ul>
+                        }
+                       
+                    </li>
                 }
 
             </ul>

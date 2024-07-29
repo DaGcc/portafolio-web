@@ -1,7 +1,8 @@
-<article class="tag" [ngClass]="classList()">
-    <figure class="tag__figure" *ngIf="src() != undefined && src() != ''">
-        <img [src]="src()" alt="Figure tag">
-    </figure>
-    <span *ngIf="text()!=undefined && text() != ''" class="tag__text">{{text()}}</span>
 
-</article>
+    <article class="tag" [ngClass]="classList()">
+        <figure class="tag__figure" *ngIf="src() != undefined && src() != ''">
+            <img [src]="src()" alt="Figure tag">
+        </figure>
+        <span *ngIf="text()!=undefined && text() != ''" class="tag__text">{{text()}}</span>
+    
+    </article>
