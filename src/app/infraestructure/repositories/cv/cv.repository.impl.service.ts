@@ -18,11 +18,20 @@ export class CvRepositoryImplService extends CvReporitory{
     super();
   }
 
-
+  /**
+   * @description petición para obtener la data del cv en formato `json`, ejp: `assets/json/cv.json`, por defecto la petición empezara a buscar en el directorio raiz.
+   * @param jsonName ruta del archivo json con los datos necesarios
+   * @returns un observable con tipo `CvEntity`
+   */
   override readFileJsonCV( jsonName : string ): Observable<CvEntity> {
     return this._http.get<CvEntity>(`${jsonName}`);
   }
 
+  override getFileCv(filePath: string): Observable<Blob> {
+    return this._http.get( filePath,  { 
+      responseType : 'blob'
+    });
+  }
 
 
 }

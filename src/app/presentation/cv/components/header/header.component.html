@@ -12,7 +12,10 @@
 
     <section class="header__actions">
 
-        <component-button-action pathIcon="assets/img/icons/moon.svg"
+        <component-button-action pathIcon="/assets/img/icons/download.svg"
+        [color]="'primary'" transparent (cClick)="downloadCv()" />
+
+        <component-button-action pathIcon="/assets/img/icons/moon.svg"
          [color]="'primary'" transparent (cClick)="toggleMode($event)" />
     </section>
 

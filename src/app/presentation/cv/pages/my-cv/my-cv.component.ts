@@ -41,18 +41,20 @@ import { HeaderComponent } from '@presentation/cv/components/header/header.compo
 })
 export class MyCvComponent implements OnInit, OnDestroy {
 
+  private readonly cvRepository = inject(CvRepositoryImplService)
 
 
   public dataCV = signal<{isLoad : boolean, cv : CvEntity | undefined}>({isLoad: false, cv: undefined});
+
   public cv = computed(()=> {
     if(!this.dataCV().isLoad){
       return null;
     }
     return this.dataCV().cv;
   })
+
   private cv$ : Subscription | undefined
 
-  private readonly cvRepository = inject(CvRepositoryImplService)
 
 
   ngOnInit(): void { 
@@ -66,9 +68,9 @@ export class MyCvComponent implements OnInit, OnDestroy {
   }
 
 
+
   ngOnDestroy(): void {
     if(this.cv$) this.cv$.unsubscribe();
   }
-
 
 }

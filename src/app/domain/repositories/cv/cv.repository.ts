@@ -3,5 +3,6 @@ import { CvEntity } from "@domain/entities/cv.entity";
 import { Observable } from "rxjs";
 
 export abstract class CvReporitory {
-    abstract  readFileJsonCV(jsonName : string) : Observable<CvEntity>;
+    abstract readFileJsonCV(jsonName : string) : Observable<CvEntity>;
+    abstract getFileCv(filePath : string) : Observable<Blob>;
 }
