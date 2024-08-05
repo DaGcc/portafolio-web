@@ -1,4 +1,4 @@
-import { CommonModule, IMAGE_CONFIG, NgFor, NgIf } from '@angular/common';
+import { CommonModule, DatePipe, IMAGE_CONFIG, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, type OnInit, CUSTOM_ELEMENTS_SCHEMA, inject, signal, computed, OnDestroy } from '@angular/core';
 
 
@@ -24,7 +24,8 @@ import { HeaderComponent } from '@presentation/cv/components/header/header.compo
     CardProjectComponent,
     ButtonLinkComponent,
     TimelineComponent,
-    HeaderComponent
+    HeaderComponent,
+    DatePipe
   ],
   providers: [
     {
@@ -55,6 +56,7 @@ export class MyCvComponent implements OnInit, OnDestroy {
 
   private cv$ : Subscription | undefined
 
+  public dateNow = new Date();
 
 
   ngOnInit(): void { 

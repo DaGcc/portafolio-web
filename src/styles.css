@@ -41,6 +41,8 @@ button {
     /* --text: rgb(216 227 238/var(--tw-text-opacity)); */
     --text: #000c;
     --info-text: rgb(31 41 55 / var(--tw-text-opacity));
+    --background-highlighted: #FDE047;
+    --color-highlighted: #3d3d2ed4;
 
     --code-background-page: 255 255 255;
     /* --background-page: linear-gradient(to right, #f5f5f5, transparent 1px), linear-gradient(to bottom, #f5f5f5, transparent 1px); */
@@ -105,7 +107,8 @@ button {
 
     /*! **** VARIABLES PARA BOTONS **** */
 
-}
+  
+}   
 
 .--shadow {
     box-shadow: var(--shadow)
@@ -135,6 +138,8 @@ body.dark-mode {
     --sub-title: rgb(115, 164, 214);
     --text: rgb(216 227 238/var(--tw-text-opacity));
     --info-text: rgba(206, 212, 218, 0.6);
+    --background-highlighted: #938541;
+    --color-highlighted: #e9dc9e;
 
     --shadow: 10px 10px 20px rgb(11 22 41 / 51%),
         -10px -10px 20px rgb(0 16 39 / 22%);

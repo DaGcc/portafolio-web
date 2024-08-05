@@ -6,6 +6,12 @@
 @if ( dataCV().isLoad && dataCV().cv != undefined && cv() != undefined ) {
     
 
+    <!--* ICONS  -->
+    <!-- <div class="figure-icon">
+        <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/nacion.png)"></div>
+    </div> -->
+
+
     <!--* HEADER  -->
     <component-header class="component-header"/>
 
@@ -171,7 +177,20 @@
     
     <!--* FOOTER -->
     <footer class="footer">
-        <p style="text-align: center; color: var(--info-text);">©Todos los derechos reservados</p>
+        <section class="footer__autor">
+            <p style="text-align: center; color: var(--info-text);">Elaborado por <strong>Daniel Amadeo Gutierrez Ccallasaca</strong></p>
+        </section>
+
+        <section class="footer__info">
+            <div class="figure-icon">
+                <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/bandera02.png)"></div>
+            </div>
+            <p style="text-align: center; color: var(--info-text);">{{ dateNow | date : 'mediumDate'  }}</p>
+            <div class="figure-icon">
+                <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/bandera02.png)"></div>
+            </div>
+        </section>
+        
     </footer>
     
     
