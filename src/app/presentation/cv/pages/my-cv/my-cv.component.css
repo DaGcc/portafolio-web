@@ -221,15 +221,22 @@ ul {
 
 
 
-.obtetivo{
+.objetivo{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   align-items: center;
+  
   & .obtetivo__img{
     filter: drop-shadow(4px 4px 0 var(--background-widget-three));
-  }
+  }    
 }
 
+/* .glow{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at 30vw 40vh, var(--background-radial-gradient-cursor) 0%, transparent 300px);
+} */
 
 .skills { 
   --gap-skill: 15px;

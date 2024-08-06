@@ -19,7 +19,7 @@
                 "network": "Github",
                 "username": "DaGcc",
                 "url": "https://github.com/DaGcc",
-                "image": "/assets/img/icons/github2.svg"
+                "image": "/assets/img/icons/github.svg"
             },
             {
                 "network": "Linkedin",
@@ -216,7 +216,7 @@
                 },
                 {
                     "name": "Github",
-                    "urlImage": "/assets/img/icons/github2.svg",
+                    "urlImage": "/assets/img/icons/github.svg",
                     "level": 1
                 }
             ]
@@ -299,7 +299,7 @@
                     "network": "Github",
                     "username": "DaGcc",
                     "url": "https://github.com/DaGcc",
-                    "image": "/assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github.svg"
                 }
             ]
         },
@@ -347,7 +347,7 @@
                     "network": "Github",
                     "username": "DaGcc",
                     "url": "https://github.com/DaGcc/APP-MAP",
-                    "image": "/assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github.svg"
                 }
             ]
         },
@@ -409,7 +409,7 @@
                     "network": "Github",
                     "username": "DaGcc",
                     "url": "https://github.com/DaGcc/PROYECTO-WEB-APP-DNS_ANGULAR",
-                    "image": "/assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github.svg"
                 }
             ]
         },
@@ -461,13 +461,13 @@
                     "network": "Github",
                     "username": "Front-End",
                     "url": "https://github.com/DaGcc/APP-MAP",
-                    "image": "/assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github.svg"
                 },
                 {
                     "network": "Github",
                     "username": "Back-End",
                     "url": "https://github.com/DaGcc/CHAT-APP-BACK",
-                    "image": "/assets/img/icons/github2.svg"
+                    "image": "/assets/img/icons/github.svg"
                 } 
                 
             ]

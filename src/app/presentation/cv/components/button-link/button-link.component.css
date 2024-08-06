@@ -6,9 +6,9 @@
   align-items: center;
   justify-content: center;
   gap: 3px;
-  background-color: var(--background-btn-two);
+  background-color: var(--background-link);
   padding: 3px 7px;
-  border-radius: var(--border-radius-btn);
+  border-radius: var(--border-radius-btn);  
   text-decoration: none;
   font-size: small;
   backdrop-filter: blur(5px);
