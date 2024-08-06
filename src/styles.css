@@ -51,9 +51,9 @@ button {
     --background-widget-two: #ffff;
     --background-widget-three: #5855ff;
     --background-widget-four: #e5e2e2;
-
-    --border-color: #e4eaf4b3;
-
+    --background-radial-gradient-cursor: #fffeeede;
+    
+    --border-color: #e6efff83;
 
     --linear-one: linear-gradient(to right bottom, #ff0059, #ff0079, #f8009b, #e723bc, #cc42db, #dd3ed5, #ed3bcf, #fc39c8, #ff3695, #ff5d63, #ff8935, #ffb100);
 
@@ -65,15 +65,15 @@ button {
     --border-radius-widget: 20px;
 
 
-    --shadow: 10px 10px 20px rgba(189, 223, 254, 0.248),
-        -10px -10px 25px #d8ecff5a;
+    --shadow: 10px 10px 20px rgba(189, 223, 254, .248),
+             -10px -10px 25px #d8ecff5a;
 
     --top: 18px;
 
 
 
     /** VARIABLES PARA BADGE */
-    --background-badge-one: #edf4ff;
+    --background-badge-one: #fff;
     --background-badge-one-hover: #7f5cffcd;
     /* --color-badge: #328AF1; */
     --color-badge: rgb(75 85 99);
@@ -163,7 +163,7 @@ body.dark-mode {
     --background-widget-two: #18273F;
     --background-widget-three: #5855ff;
     --background-widget-four: #161616;
-
+    --background-radial-gradient-cursor: #13214a;
     --border-color: #273d60d1;
     /*! END - VARIABLES WIDGETS  */
 
@@ -208,7 +208,7 @@ body.dark-mode {
 
 html,
 body {
-    height: 100%;
+    height: max-content;
 }
 
 body {
@@ -225,6 +225,7 @@ body {
 body {
     overflow: auto;
     background: var(--background-page) !important;
+    height: max-content;
 }
 
 .component {

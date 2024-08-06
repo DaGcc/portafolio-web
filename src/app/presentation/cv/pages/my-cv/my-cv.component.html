@@ -3,209 +3,209 @@
 </figure> -->
 <!-- Main -->
 
-@if ( dataCV().isLoad && dataCV().cv != undefined && cv() != undefined ) {
-    
-
-    <!--* ICONS  -->
-    <!-- <div class="figure-icon">
-        <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/nacion.png)"></div>
-    </div> -->
-
-
-    <!--* HEADER  -->
-    <component-header class="component-header"/>
-
-    <!--* ASIDE  -->
-    <aside class="aside --shadow">
-        <div class="side-actions">
-            @for (profile of cv()!.basics.profiles; track $index) {
-                <li class="redes-sociales__media">
-                    <component-button-link class="redes-sociales__link" [link]="profile.url" [pathIcon]="profile.image" />
-                </li>
-            }
-            <li class="redes-sociales__media">
-                <component-button-link class="redes-sociales__link" 
-                [link]="'mailto:gutierrezcallazacadaniel@gmail.com?Subject=Interesado%20en%20tus%20habilidades'" 
-                [pathIcon]="'/assets/img/icons/gmail.svg'" />
-            </li>
-        </div>
-    </aside>
-
-    <!--* MAIN -->
-    <main class="main">
-
-        <!--* PRESENTACION  -->
-        <section class="container">
-    
-            <article class="presentation">
-    
-                <div class="back-img"></div>
-                <div class="presentation__back">
-
-                    <figure class="perfil"> 
-                        <img class="perfil__img" [src]="cv()!.basics.image" alt="tu foto">
-                    </figure>
+<section class="my-cv" (mousemove)="mouseMove($event)">
+    @if ( dataCV().isLoad && dataCV().cv != undefined && cv() != undefined ) {
         
-                    <div class="datos">
-                        <h3 class="datos__text datos__text--title">{{cv()!.basics.name}}</h3>
-                        <span class="datos__text datos__text--sub-title">{{cv()!.basics.label}}</span>
+        <!--* ICONS  -->
+        <!-- <div class="figure-icon">
+            <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/nacion.png)"></div>
+        </div> -->
+
+
+
+            <!--* HEADER  -->
+            <component-header class="component-header"/>
+        
+            <!--* ASIDE  -->
+            <aside class="aside --shadow">
+                <div class="side-actions">
+                    @for (profile of cv()!.basics.profiles; track $index) {
+                        <li class="redes-sociales__media">
+                            <component-button-link class="redes-sociales__link" [link]="profile.url" [pathIcon]="profile.image" />
+                        </li>
+                    }
+                    <li class="redes-sociales__media">
+                        <component-button-link class="redes-sociales__link" 
+                        [link]="'mailto:gutierrezcallazacadaniel@gmail.com?Subject=Interesado%20en%20tus%20habilidades'" 
+                        [pathIcon]="'/assets/img/icons/gmail.svg'" />
+                    </li>
+                </div>
+            </aside>
+        
+            <!--* MAIN -->
+            <main class="main">
+        
+                <!--* PRESENTACION  -->
+                <section class="container">
+            
+                    <article class="presentation">
+            
+                        <div class="back-img"></div>
+                        <div class="presentation__back">
+        
+                            <figure class="perfil"> 
+                                <img class="perfil__img" [src]="cv()!.basics.image" alt="tu foto">
+                            </figure>
+                
+                            <div class="datos">
+                                <h3 class="datos__text datos__text--title">{{cv()!.basics.name}}</h3>
+                                <span class="datos__text datos__text--sub-title">{{cv()!.basics.label}}</span>
+                            </div>
+                
+                            <ul class="redes-sociales">
+                                @for (profile of cv()!.basics.profiles; track $index) {
+                                    <li class="redes-sociales__media">
+                                        <component-button-link class="redes-sociales__link" [link]="profile.url" [pathIcon]="profile.image" [textAlt]="profile.network" />
+                                    </li>
+                                }
+                            </ul>
+        
+                        </div>
+                        
+                    </article>
+                </section>
+                <!--! END - PRESENTACION  -->
+                
+                <!--* OBJETIVOS -->
+                <section class="container">
+        
+                    <div class="obtetivo">
+                        <div>
+                            <!--* titulo container  -->
+                            <h2 class="container__title">OBJETIVOS</h2>
+                            <p class="text">{{cv()!.basics.summary}}</p>
+                        </div>
+            
+                        <figure class="figure">
+                            <img class="figure__img obtetivo__img" src="/assets/img/panels/developer-isometric.svg" alt="fnd">
+                        </figure>
+            
                     </div>
-        
-                    <ul class="redes-sociales">
-                        @for (profile of cv()!.basics.profiles; track $index) {
-                            <li class="redes-sociales__media">
-                                <component-button-link class="redes-sociales__link" [link]="profile.url" [pathIcon]="profile.image" [textAlt]="profile.network" />
+            
+                </section>
+                <!--! END - OBJETIVOS  -->
+            
+                <!--* HABILIDADES  -->
+                <article class="container">
+            
+                    <!--* titulo container  -->
+                    <h2 class="container__title">HABILIDADES</h2>
+            
+                    <!--* skills -->
+                    <ul class="skills">
+            
+                        
+                        @for (skill of cv()!.skills; track $index) {
+                            <li class="skills__type">
+                                <ul class="skills__content" >
+                                    @for (util of skill.utils; track $index) {
+                                        <li class="skills__skill" >
+                                            <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                        </li>   
+                                    }
+                                </ul>
+                                <ul class="skills__content">
+                                    @for (util of skill.utils; track $index) {
+                                        <li class="skills__skill" >
+                                            <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                        </li>   
+                                    }
+                                </ul>
+                                @if (skill.utils.length<8) {
+                                    <ul class="skills__content">
+                                        @for (util of skill.utils; track $index) {
+                                            <li class="skills__skill" >
+                                                <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                            </li>   
+                                        }
+                                    </ul>
+                                    <ul class="skills__content">
+                                        @for (util of skill.utils; track $index) {
+                                            <li class="skills__skill" >
+                                                <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                            </li>   
+                                        }
+                                    </ul>
+                                    <ul class="skills__content">
+                                        @for (util of skill.utils; track $index) {
+                                            <li class="skills__skill" >
+                                                <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                            </li>   
+                                        }
+                                    </ul>
+                                    <ul class="skills__content">
+                                        @for (util of skill.utils; track $index) {
+                                            <li class="skills__skill" >
+                                                <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
+                                            </li>   
+                                        }
+                                    </ul>
+                                }
+                            
                             </li>
                         }
+        
                     </ul>
-
-                </div>
-                
-            </article>
-        </section>
-        <!--! END - PRESENTACION  -->
-        
-        <!--* OBJETIVOS -->
-        <section class="container">
-
-            <div class="obtetivo">
-                <div>
+            
+                </article>
+                <!--! END - HABILIDADES  -->
+            
+                <!--* PROYECTOS  -->
+                <article class="container">
+            
                     <!--* titulo container  -->
-                    <h2 class="container__title">OBJETIVOS</h2>
-                    <p class="text">{{cv()!.basics.summary}}</p>
-                </div>
-    
-                <figure class="figure">
-                    <img class="figure__img obtetivo__img" src="/assets/img/panels/developer-isometric.svg" alt="fnd">
-                </figure>
-    
-            </div>
-    
-        </section>
-        <!--! END - OBJETIVOS  -->
-    
-        <!--* HABILIDADES  -->
-        <article class="container">
-    
-            <!--* titulo container  -->
-            <h2 class="container__title">HABILIDADES</h2>
-    
-            <!--* skills -->
-            <ul class="skills">
-    
-                
-                @for (skill of cv()!.skills; track $index) {
-                    <li class="skills__type">
-                        <ul class="skills__content" >
-                            @for (util of skill.utils; track $index) {
-                                <li class="skills__skill" >
-                                    <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
-                                </li>   
-                            }
-                        </ul>
-                        <ul class="skills__content">
-                            @for (util of skill.utils; track $index) {
-                                <li class="skills__skill" >
-                                    <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
-                                </li>   
-                            }
-                        </ul>
-                        @if (skill.utils.length<8) {
-                            <ul class="skills__content">
-                                @for (util of skill.utils; track $index) {
-                                    <li class="skills__skill" >
-                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
-                                    </li>   
-                                }
-                            </ul>
-                            <ul class="skills__content">
-                                @for (util of skill.utils; track $index) {
-                                    <li class="skills__skill" >
-                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
-                                    </li>   
-                                }
-                            </ul>
-                            <ul class="skills__content">
-                                @for (util of skill.utils; track $index) {
-                                    <li class="skills__skill" >
-                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
-                                    </li>   
-                                }
-                            </ul>
-                            <ul class="skills__content">
-                                @for (util of skill.utils; track $index) {
-                                    <li class="skills__skill" >
-                                        <component-badge [text]="util.name" [src]="util.urlImage" [classList]="'--shadow'"/>
-                                    </li>   
-                                }
-                            </ul>
+                    <h2 class="container__title"> PROYECTOS</h2>
+            
+                    <!--* proyectos  -->
+                    <section class="cards">
+            
+                        @for (project of cv()!.projects; track $index) {
+                            <component-card-project [project]="project"  />
                         }
-                       
-                    </li>
-                }
-
-            </ul>
-    
-        </article>
-        <!--! END - HABILIDADES  -->
-    
-        <!--* PROYECTOS  -->
-        <article class="container">
-    
-            <!--* titulo container  -->
-            <h2 class="container__title"> PROYECTOS</h2>
-    
-            <!--* proyectos  -->
-            <section class="cards">
-    
-                @for (project of cv()!.projects; track $index) {
-                    <component-card-project [project]="project"  withShadow/>
-                }
-    
-            </section>
-
-        </article>
-        <!--! END - PROYECTOS  -->
-
-        <!--* TIMELINE  -->
-        <article class="container">
-            <h2 class="container__title">EXPERIENCIA</h2>
-            <component-timeline />
-        </article>
-        <!--! END - TIMELINE  -->
-    </main>
-    
-    <!--* FOOTER -->
-    <footer class="footer">
-        <section class="footer__autor">
-            <p style="text-align: center; color: var(--info-text);">Elaborado por <strong>Daniel Amadeo Gutierrez Ccallasaca</strong></p>
-        </section>
-
-        <section class="footer__info">
-            <div class="figure-icon">
-                <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/bandera02.png)"></div>
-            </div>
-            <p style="text-align: center; color: var(--info-text);">{{ dateNow | date : 'mediumDate'  }}</p>
-            <div class="figure-icon">
-                <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/bandera02.png)"></div>
-            </div>
-        </section>
+            
+                    </section>
         
-    </footer>
-    
-    
-}@else {
-    <main class="main">
-        <section class="container">
-            <!-- <div style="width: 10px; height: 10px;">
-                <component-skeleton></component-skeleton>
-            </div> -->
-            <span> CARGANDO DATOS...</span>
-        </section>
-    </main>
-}
+                </article>
+                <!--! END - PROYECTOS  -->
+        
+                <!--* TIMELINE  -->
+                <article class="container">
+                    <h2 class="container__title">EXPERIENCIA</h2>
+                    <component-timeline />
+                </article>
+                <!--! END - TIMELINE  -->
+            </main>
+            
+            <!--* FOOTER -->
+            <footer class="footer">
+                <section class="footer__autor">
+                    <p style="text-align: center; color: var(--info-text);">Elaborado por <strong>Daniel Amadeo Gutierrez Ccallasaca</strong></p>
+                </section>
+        
+                <section class="footer__info">
+                    <div class="figure-icon">
+                        <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/bandera02.png)"></div>
+                    </div>
+                    <p style="text-align: center; color: var(--info-text);">{{ dateNow | date : 'mediumDate'  }}</p>
+                    <div class="figure-icon">
+                        <div class="figure-icon__img" style="--url: url(/assets/img/icons/peru/bandera02.png)"></div>
+                    </div>
+                </section>
+                
+            </footer>
+            <div  #degraded class="degraded"></div>
+    }@else {
+        <main class="main">
+            <section class="container">
+                <!-- <div style="width: 10px; height: 10px;">
+                    <component-skeleton></component-skeleton>
+                </div> -->
+                <span> CARGANDO DATOS...</span>
+            </section>
+        </main>
+    }
 
-
+</section>
 
 <!--* con display flex todos los hijos se convertiran el elementos en linea, pero tener cuidado
 si un elemento tiene una altura y los demas no, dicha altura afectara a estos elementos sin altura definida,

@@ -20,7 +20,8 @@ export class ThemeService {
   constructor() { 
     this.initStateStorageMode().subscribe({
       next : (data : boolean) => {
-        console.info("El tema es: "+ data ? "WHITE" : "DARK")
+        
+        console.info("El tema es: " + (data ? "DARK" : "WHITE"))
         this.setTheme();
       }
     });

@@ -29,6 +29,10 @@ h1,h2,h3,h4,h5,h6, p{
   }
 } */
 
+.my-cv{
+  position: relative;
+  background: inherit;
+}
 
 .component-header, .main{
   display: block;
@@ -363,6 +367,7 @@ ul {
   gap: 5px;
 }
 
+
 /* 
 .skills__skill{
 
@@ -411,7 +416,17 @@ ul {
       background-size: cover;
       height: inherit;
       aspect-ratio: 1 / 1;
-      filter: blur(9px) brightness(2);
+      /* filter: blur(9px) brightness(2); */
     }
   }
+}
+
+
+.degraded{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* background: radial-gradient(circle at 1208px 1057px, var(--background-radial-gradient-cursor) 0%, var(--background-page) 600px); */
+  height: inherit;
+  width: inherit;
 }
