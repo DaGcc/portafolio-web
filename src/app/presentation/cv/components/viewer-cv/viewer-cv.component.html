@@ -1,2 +1,8 @@
-<pdf-viewer [src]="pdfSrc" class="pdf" [zoom]=".95" [render-text]="true" [original-size]="false"
-    (on-progress)="onProgress($event)"></pdf-viewer>
+<div class="pdf-content">
+    @if (!isLoad()) {
+        <span> CARGANDO... </span>
+    }
+    
+    <pdf-viewer [src]="pdfSrc"  [zoom]=".95" [render-text]="true" [render-text-mode]="2" [original-size]="false" [fit-to-page]="true" 
+    (on-progress)="onProgress($event)" (after-load-complete)="afterLoad($event)" class="pdf" ></pdf-viewer>
+</div>

@@ -1,4 +1,4 @@
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule, NgIf, NgStyle } from '@angular/common';
 import { ChangeDetectionStrategy, Component, WritableSignal, inject, signal } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -7,8 +7,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
   selector: 'app-viewer-cv',
   standalone: true,
   imports: [
-    CommonModule,
-    PdfViewerModule
+    NgIf,
+    PdfViewerModule,
+    NgStyle
   ],
   templateUrl: './viewer-cv.component.html',
   styleUrl: './viewer-cv.component.css',
@@ -18,10 +19,16 @@ export class ViewerCvComponent {
 
 
   pdfSrc : string = inject(MAT_DIALOG_DATA); 
-  isLoad : WritableSignal<boolean>  = signal<boolean>(false)
+  isLoad : WritableSignal<boolean>  = signal<boolean>(false);
+
+
 
   onProgress(e : any){
-    // console.log(e)
+    console.log(e)
+    this.isLoad.set(true)
+  }
+
+  afterLoad(e : any){
     this.isLoad.set(true)
   }
  
