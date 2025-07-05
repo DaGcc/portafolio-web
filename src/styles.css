@@ -51,7 +51,7 @@ button {
     --background-widget-two: #ffff;
     --background-widget-three: #5855ff;
     --background-widget-four: #e5e2e2;
-    --background-radial-gradient-cursor: #fffce888;
+    --background-radial-gradient-cursor: #feffdf45;
     
     --border-color: #e6efff83;
 
@@ -163,7 +163,7 @@ body.dark-mode {
     --background-widget-two: #18273F;
     --background-widget-three: #5855ff;
     --background-widget-four: #161616;
-    --background-radial-gradient-cursor: #13214a;
+    --background-radial-gradient-cursor: #18274f;
     --border-color: #273d60d1;
     /*! END - VARIABLES WIDGETS  */
 

@@ -80,7 +80,7 @@ export class MyCvComponent implements OnInit, OnDestroy {
     if(this.degratedEl()?.nativeElement) {
       this.renderer2.setStyle(this.degratedEl()?.nativeElement,'background',`radial-gradient(circle at ${e.pageX}px ${e.pageY}px, var(--background-radial-gradient-cursor) 0%, transparent 800px`)
     }
-  
+   
   }
 
   ngOnDestroy(): void {
